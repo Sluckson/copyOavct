@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+
+    <style>
+			body
+		{
+			margin: 0;
+			height: 100%;
+			width: 100%;
+		}
+		#bodyInner {
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+		.modalPageWrap,
+		#modalPage
+		{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 15000;
+		}
+		.modalBackground2
+		{
+			height: 100%;
+			width: 100%;
+			background-color: #999999;
+			position: fixed;
+			z-index: 500;
+			top: 0px; left: 0px;
+			-moz-opacity:0.4;
+			opacity: 0.4;
+			filter: alpha(opacity=40);
+		}
+		.modalContainer
+		{
+			position: absolute;
+			width: 300px;
+			left: 50%;
+			top: 50%;
+			z-index: 750;
+		}
+		.modal
+		{
+			background-color: white;
+			border: solid 1px black;
+			position: relative;
+			top: -150px;
+			left: -150px;
+			z-index: 1000;
+			width: 300px;
+			height: 95px;
+			padding: 0px;
+		}
+		.modalBody
+		{
+			padding: 10px;
+		}
+		#modalCloseButton
+		{
+			position: absolute;
+			top: 2px;
+			right: 2px;
+			z-index: 600;
+			font-size: 1.1em;
+			background-color: #fff;
+			cursor: pointer;
+		}
+	</style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var outerModalClientID = 'outerModal';
+
+            var outerModal = document.getElementById(outerModalClientID);
+            if (outerModal != null && outerModal != undefined) {
+                outerModal.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+<body >
+    <form name="form1" method="post" action="VHReport.aspx?salvageId=11764566" id="form1">
+
+
+
+        <div id="outerModal" style="display: block;">
+            <div id="modalPage">
+                <div class="modalBackground2"></div>
+                <!--[if lte IE 6.5]><iframe class="IE_Mask_SELECT_Widgets"
+            src="../blank.html"></iframe><![endif]-->
+                <div class="modalContainer" id="modalWrap">
+                    <div class="modal">
+                        <div id="modalCloseButton">
+                            <img src="../images/buttons/button.close.png" width="14"
+                                height="15" alt="(x)" />
+                        </div>
+                        <div class="modalBody">
+                            <div class="centeredImage" style="text-align: center">
+                                <span style="font-family: Arial; font-size: 1em; font-weight: bold; text-align: center">Loading</span>
+                                <br />
+                                <img src="../Images/ajax-loader4.gif" style="border-width: 0px;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input name="hdnIsLoadedFirst" type="hidden" id="hdnIsLoadedFirst" />
+        <div id="divHtmlContent">
+  $autovinhtml
+</div>
+    </form>
+</body>
+</html>

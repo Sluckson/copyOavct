@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/vdYearMakeModelIStockID" style="@style/TabHeader"/>
+        <include layout="@layout/tab_header_border"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/section_vehicle_image_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+                    <HorizontalScrollView android:background="@color/iaa_black" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/vehicle_all_icons" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <LinearLayout android:orientation="vertical" android:id="@+id/is_public" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Product_Detail_Icon">
+                                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_public" android:layout_weight="1"/>
+                                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/iaa_white" android:paddingTop="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_dtl_public"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/run_drive" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Product_Detail_Icon">
+                                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_runanddrive" android:layout_weight="1"/>
+                                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/iaa_white" android:paddingTop="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_dtl_run_drive"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/run_start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Product_Detail_Icon">
+                                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_runanddrive"/>
+                                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/iaa_white" android:paddingTop="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_dtl_start"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/shrink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Product_Detail_Icon">
+                                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_shrinkwrap"/>
+                                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/iaa_white" android:id="@+id/text_shrink_wrap" android:paddingTop="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_dtl_shrink_wrap"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/offsite" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/Product_Detail_Icon">
+                                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_location"/>
+                                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/iaa_white" android:paddingTop="@dimen/row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_dtl_offsite"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <ImageView android:id="@+id/vehicle_detail_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp"/>
+                    <androidx.viewpager.widget.ViewPager android:id="@+id/vehicle_thumbnail_pager" android:layout_width="match_parent" android:layout_height="140dp"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/vehicle_detail_img_layout" android:padding="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.iaai.android.old.utils.p016ui.CirclePageIndicator android:id="@+id/indicator" android:padding="4dp" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_centerHorizontal="true"/>
+                    <ImageView android:id="@+id/vehicle_image_gridView" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_img_gridview" android:layout_toLeftOf="@+id/vehicle_image_listview"/>
+                    <ImageView android:id="@+id/vehicle_image_listview" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_img_listview" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_ibuy_fast_sold" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ibf_sold"/>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/section_high_bid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <TextView android:id="@+id/txt_current_high_amount_label" android:text="@string/lbl_current_high" style="@style/Text.Bid"/>
+                    <TextView android:id="@+id/txt_current_high_amount" android:layout_marginLeft="8dp" style="@style/Text.Bid"/>
+                    <TextView android:id="@+id/txt_current_high_bidder" android:layout_marginLeft="8dp" style="@style/Text.Bid"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/section_maxbid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center" android:text="@string/lbl_pre_bid_max" style="@style/Text.Normal"/>
+                    <TextView android:layout_gravity="center" android:id="@+id/txt_my_max_bid_amount" android:layout_marginLeft="8dp" style="@style/Text.Normal"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/section_time_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/txt_bid_type" style="@style/Text.Countdown"/>
+                    <TextView android:id="@+id/txt_bid_time_left" android:layout_marginLeft="8dp" style="@style/Text.Countdown"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/section_ibuyfast" android:padding="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center" android:text="@string/lbl_ibuy_fast" style="@style/Text.Normal"/>
+                    <TextView android:layout_gravity="center" android:id="@+id/txt_ibuyfast_amount" style="@style/Text.Normal"/>
+                    <TextView android:layout_gravity="center" android:id="@+id/txt_ibuyfast_time_left" style="@style/Text.Countdown"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/section_ibid_live_countdown" android:padding="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="center" android:text="@string/lbl_auction_starts_in" style="@style/Text.Bid"/>
+                    <TextView android:layout_gravity="center" android:id="@+id/txt_ibid_live_time_countdown" style="@style/Text.Countdown"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btn_prebid" android:visibility="gone" android:text="@string/lbl_pre_bid" style="@style/Button.Bid"/>
+                    <Button android:id="@+id/btn_sealed_bid" android:visibility="gone" android:text="@string/lbl_sealed_bid" style="@style/Button.Bid"/>
+                    <Button android:id="@+id/btn_ibuy_fast" android:visibility="gone" android:text="@string/lbl_ibuy_fast" style="@style/Button.IBuyFast"/>
+                    <Button android:id="@+id/btn_ibid_live" android:visibility="gone" android:text="@string/lbl_ibid_live" style="@style/Button.IBuyFast"/>
+                    <Button android:id="@+id/btn_watch_vehicle" android:visibility="gone" android:text="@string/lbl_watch" style="@style/Button.Normal"/>
+                    <Button android:id="@+id/btn_unwatch_vehicle" android:visibility="gone" android:text="@string/lbl_unwatch" style="@style/Button.Normal"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/vehicle_table" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

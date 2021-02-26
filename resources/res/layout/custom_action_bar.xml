@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" android:paddingStart="22dp" android:paddingEnd="12dp">
+    <ImageView android:id="@+id/ivToolbarImg1" android:visibility="visible" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_cross" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/bdt_black" android:id="@+id/tvToolbarName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif" android:paddingStart="60dp"/>
+    <ImageView android:id="@+id/ivToolbarImg2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cross" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

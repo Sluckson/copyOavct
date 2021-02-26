@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/iaa_black" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/back_navigation" android:background="@color/vehicle_enlarge_img_color" android:padding="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_gridview" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_img_gridview_gray"/>
+        <ImageView android:id="@+id/img_listview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_img_listview_gray" android:layout_toRightOf="@+id/img_gridview"/>
+        <ImageView android:id="@+id/back_arrow" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_gray" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/enlarge_image_view" android:background="@color/iaa_black" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/back_navigation">
+        <com.iaai.android.old.utils.p016ui.touchgallery.GalleryViewPager android:id="@+id/full_img_gallery" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.iaai.android.old.utils.p016ui.CirclePageIndicator android:id="@+id/full_page_indicator" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

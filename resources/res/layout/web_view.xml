@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/btn_close_ibid_live" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_icon" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/btn_overflow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <ImageButton android:background="@null" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_icon"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/ibid_live_header_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/change_auction_string"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/progress_small"/>
+    </FrameLayout>
+</LinearLayout>

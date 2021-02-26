@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/benchmark_subheader2" style="@style/SectionHeader">
+            <TextView android:textStyle="bold" android:textColor="@color/iaa_white" android:gravity="left" android:id="@android:id/empty" android:text="@string/title_bidding_benchmark" style="@style/DetailText"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/benchmark_subheader" style="@style/SectionHeader">
+            <TextView android:textStyle="bold" android:textColor="@color/iaa_white" android:gravity="left" android:id="@android:id/empty" android:text="@string/lbl_bidding_summary" style="@style/DetailText"/>
+        </FrameLayout>
+        <ListView android:id="@+id/infoGraphicSummary" android:layout_width="match_parent" android:layout_height="360dp"/>
+        <FrameLayout android:id="@+id/benchmark_subheader1" style="@style/SectionHeader">
+            <TextView android:textStyle="bold" android:textColor="@color/iaa_white" android:gravity="left" android:id="@android:id/empty" android:text="@string/title_recommended_vehicles" style="@style/DetailText"/>
+        </FrameLayout>
+        <ListView android:id="@+id/recomendedVehicles" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:gravity="center" android:id="@android:id/empty" android:visibility="gone" style="@style/DetailText"/>
+    </LinearLayout>
+</ScrollView>

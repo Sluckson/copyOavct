@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/md_tobepaid_totaldue_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="22dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layout_total_pending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textSize="14sp" android:id="@+id/total_due" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_total_due_tobe_paid" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/total_due_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/total_due" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/layout_total_pending" android:layout_alignParentRight="true">
+            <TextView android:textSize="14sp" android:id="@+id/award_pending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_award_pending" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="14sp" android:textColor="#1d67b2" android:id="@+id/award_pending_amount" android:paddingTop="2dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/award_pending" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/iaa_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

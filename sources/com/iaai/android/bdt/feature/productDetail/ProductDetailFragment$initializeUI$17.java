@@ -1,0 +1,73 @@
+package com.iaai.android.bdt.feature.productDetail;
+
+import android.app.Application;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import androidx.exifinterface.media.ExifInterface;
+import com.iaai.android.C2723R;
+import com.iaai.android.bdt.base.BaseActivity;
+import com.iaai.android.old.utils.IAASharedPreference;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+@Metadata(mo66931bv = {1, 0, 3}, mo66932d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, mo66933d2 = {"<anonymous>", "", "it", "Landroid/view/View;", "kotlin.jvm.PlatformType", "onClick"}, mo66934k = 3, mo66935mv = {1, 1, 13})
+/* compiled from: ProductDetailFragment.kt */
+final class ProductDetailFragment$initializeUI$17 implements View.OnClickListener {
+    final /* synthetic */ ProductDetailFragment this$0;
+
+    ProductDetailFragment$initializeUI$17(ProductDetailFragment productDetailFragment) {
+        this.this$0 = productDetailFragment;
+    }
+
+    public final void onClick(View view) {
+        BaseActivity access$getBaseActivity$p = this.this$0.baseActivity;
+        if (access$getBaseActivity$p == null) {
+            Intrinsics.throwNpe();
+        }
+        Application application = access$getBaseActivity$p.getApplication();
+        Intrinsics.checkExpressionValueIsNotNull(application, "baseActivity!!.application");
+        if (!IAASharedPreference.getBiddingInfoViewLessPreferencesMVVM(application.getApplicationContext()).booleanValue()) {
+            BaseActivity access$getBaseActivity$p2 = this.this$0.baseActivity;
+            if (access$getBaseActivity$p2 == null) {
+                Intrinsics.throwNpe();
+            }
+            Application application2 = access$getBaseActivity$p2.getApplication();
+            Intrinsics.checkExpressionValueIsNotNull(application2, "baseActivity!!.application");
+            IAASharedPreference.setBiddingInfoViewLessPreferencesMVVM(application2.getApplicationContext(), true);
+            ((ImageView) this.this$0._$_findCachedViewById(C2723R.C2726id.ic_bidding_view_more)).setImageDrawable(this.this$0.getResources().getDrawable(C2723R.C2725drawable.ic_view_up));
+            LinearLayout linearLayout = (LinearLayout) this.this$0._$_findCachedViewById(C2723R.C2726id.whocanbid);
+            Intrinsics.checkExpressionValueIsNotNull(linearLayout, "whocanbid");
+            linearLayout.setVisibility(0);
+            ((TextView) this.this$0._$_findCachedViewById(C2723R.C2726id.tvBidStatusSubTitle)).setSingleLine(false);
+            TextView textView = (TextView) this.this$0._$_findCachedViewById(C2723R.C2726id.tvBidStatusSubTitle);
+            Intrinsics.checkExpressionValueIsNotNull(textView, "tvBidStatusSubTitle");
+            textView.setEllipsize((TextUtils.TruncateAt) null);
+            return;
+        }
+        BaseActivity access$getBaseActivity$p3 = this.this$0.baseActivity;
+        if (access$getBaseActivity$p3 == null) {
+            Intrinsics.throwNpe();
+        }
+        Application application3 = access$getBaseActivity$p3.getApplication();
+        Intrinsics.checkExpressionValueIsNotNull(application3, "baseActivity!!.application");
+        IAASharedPreference.setBiddingInfoViewLessPreferencesMVVM(application3.getApplicationContext(), false);
+        ((ImageView) this.this$0._$_findCachedViewById(C2723R.C2726id.ic_bidding_view_more)).setImageDrawable(this.this$0.getResources().getDrawable(C2723R.C2725drawable.ic_view_down));
+        LinearLayout linearLayout2 = (LinearLayout) this.this$0._$_findCachedViewById(C2723R.C2726id.whocanbid);
+        Intrinsics.checkExpressionValueIsNotNull(linearLayout2, "whocanbid");
+        linearLayout2.setVisibility(8);
+        if (Intrinsics.areEqual((Object) this.this$0.bidStatusIcon, (Object) ExifInterface.LONGITUDE_WEST)) {
+            ((TextView) this.this$0._$_findCachedViewById(C2723R.C2726id.tvBidStatusSubTitle)).setSingleLine(false);
+            TextView textView2 = (TextView) this.this$0._$_findCachedViewById(C2723R.C2726id.tvBidStatusSubTitle);
+            Intrinsics.checkExpressionValueIsNotNull(textView2, "tvBidStatusSubTitle");
+            textView2.setEllipsize((TextUtils.TruncateAt) null);
+            return;
+        }
+        ((TextView) this.this$0._$_findCachedViewById(C2723R.C2726id.tvBidStatusSubTitle)).setSingleLine(true);
+        TextView textView3 = (TextView) this.this$0._$_findCachedViewById(C2723R.C2726id.tvBidStatusSubTitle);
+        Intrinsics.checkExpressionValueIsNotNull(textView3, "tvBidStatusSubTitle");
+        textView3.setEllipsize(TextUtils.TruncateAt.END);
+    }
+}

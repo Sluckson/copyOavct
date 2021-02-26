@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/llInfo" android:tag="layout/row_item_condition_info_0" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/font_size_small" android:gravity="start" android:id="@+id/tvLabelCondition" android:padding="@dimen/stock_number_margin_start" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/ivEngineLink" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_engine_video_play_button" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/font_size_small" android:textColor="@color/iaa_black" android:gravity="start" android:id="@+id/tvValueCondition" android:padding="@dimen/stock_number_margin_start" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>

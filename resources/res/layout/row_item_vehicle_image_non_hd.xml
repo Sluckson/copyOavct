@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/row_item_vehicle_image_non_hd_0" android:background="@color/iaa_white" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llGrid" android:visibility="gone" android:layout_width="match_parent" android:layout_height="200dp">
+        <ImageView android:id="@+id/vehicleImagesGrid" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llList" android:visibility="gone" android:layout_width="match_parent" android:layout_height="350dp">
+        <ImageView android:id="@+id/vehicleImagesList" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    </LinearLayout>
+</LinearLayout>

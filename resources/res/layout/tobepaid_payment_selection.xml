@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/iaa_white" android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageButton android:gravity="center_vertical" android:id="@+id/back_button" android:background="@android:color/transparent" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left_red"/>
+        <TextView android:textSize="18sp" android:textColor="@color/iaa_black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_header_tobepaid_selection" android:paddingLeft="30dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/lbl_tobe_paid" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/branch_sorting_overflow" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_three_dots_vertical"/>
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:textColor="@color/iaa_white" android:gravity="left" android:id="@+id/txt_choose_your_payment_method" android:background="@color/iaa_black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_choose_your_payment_method"/>
+    <FrameLayout android:background="@drawable/table_bgshadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ipay_block" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/ipay_logo" android:layout_width="65dp" android:layout_height="wrap_content" android:src="@drawable/ipay_logo"/>
+            <ImageView android:layout_gravity="center_vertical" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bottom_dividerline"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/iaa_txt_gray" android:layout_gravity="center_vertical" android:id="@+id/txt_remaining_allowance" android:paddingLeft="5dp" android:layout_width="140dp" android:layout_height="wrap_content" android:text="@string/lbl_remaining_daily_allowancecol" android:singleLine="true" style="@style/ToBePaidText.Row.Detail"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/val_remaining_allowance" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ToBePaidText.Row.Title"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/iaa_txt_gray" android:layout_gravity="center_vertical" android:id="@+id/txt_ipay_daily_allowance" android:paddingLeft="5dp" android:layout_width="140dp" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/lbl_daily_allowance" style="@style/ToBePaidText.Row.Detail"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/val_ipay_daily_allowance" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ToBePaidText"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:background="@drawable/arrow_next" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:background="@drawable/table_bgshadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/afc_block" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/afc_logo" android:layout_width="65dp" android:layout_height="wrap_content" android:src="@drawable/ic_afc_logo"/>
+            <ImageView android:layout_gravity="center_vertical" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bottom_dividerline"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/iaa_txt_gray" android:layout_gravity="center_vertical" android:id="@+id/txt_afc_daily_allowance" android:paddingLeft="5dp" android:layout_width="140dp" android:layout_height="wrap_content" android:text="@string/available_credit" style="@style/ToBePaidText.Row.Detail"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/val_afc_daily_allowance" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ToBePaidText.Row.Title"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/iaa_red" android:ellipsize="end" android:id="@+id/txt_error" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/img_afc_arrow" android:background="@drawable/arrow_next" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/flCreditCard" android:background="@drawable/table_bgshadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llCreditCard" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ivCreditCard" android:layout_width="65dp" android:layout_height="wrap_content" android:src="@drawable/ic_credit_card"/>
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/bdt_black" android:layout_width="65dp" android:layout_height="match_parent" android:layout_marginTop="4dp" android:text="@string/lbl_bdt_credit_card"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bottom_dividerline"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/iaa_txt_gray" android:layout_gravity="center_vertical" android:id="@+id/txt_remaining_allowance_credit" android:paddingLeft="5dp" android:layout_width="140dp" android:layout_height="wrap_content" android:text="@string/lbl_remaining_daily_allowancecol" android:singleLine="true" style="@style/ToBePaidText.Row.Detail"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/val_remaining_allowance_credit" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="$15,010.00" style="@style/ToBePaidText.Row.Title"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/iaa_txt_gray" android:layout_gravity="center_vertical" android:id="@+id/txt_ipay_daily_allowance_credit" android:paddingLeft="5dp" android:layout_width="140dp" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/lbl_daily_allowance" style="@style/ToBePaidText.Row.Detail"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/val_ipay_daily_allowance_credit" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="$15,0101.00" style="@style/ToBePaidText"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/img_credit_arrow" android:background="@drawable/arrow_next" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/flPayPal" android:background="@drawable/table_bgshadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llPayPal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ivPayPal" android:layout_width="65dp" android:layout_height="wrap_content" android:src="@drawable/ic_credit_card"/>
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/bdt_black" android:gravity="center" android:layout_width="65dp" android:layout_height="match_parent" android:layout_marginTop="4dp" android:text="PayPal"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bottom_dividerline"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="14sp" android:textColor="@color/iaa_txt_gray" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/txt_remaining_allowance_pay_pal" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Pay with PayPal" style="@style/ToBePaidText.Row.Detail"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/img_pay_pal_arrow" android:background="@drawable/arrow_next" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

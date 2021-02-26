@@ -1,0 +1,72 @@
+      <div class="container-body container-form vpr-container">
+              <div class="row">
+                  <div class="col-12 vpr-section vpr-title">
+                      <h1>Vehicle Pullout Request</h1>
+                      <h6>~header1~</h6>
+                  </div>
+              </div>
+      <div class="row">
+            <div class="col-12 vpr-section vpr-branch">
+                <div class="vpr-section-heading">
+                    <h3>~branchName~</h3>
+                    <div class="circle-icon">
+                        <svg class="svg-icon-circle svg-branch">
+                          <use xlink:href="file:///android_asset/evp/sprite.svg#icon-icon-branch"></use>
+                        </svg>
+                    </div>
+                </div>
+                <h6>~addressLine1~, ~addressLine2~</h6>
+                <p class="p-info">
+                    <svg class="svg-icon-sm">
+                      <use xlink:href="file:///android_asset/evp/sprite.svg#icon-icon-info"></use>
+                    </svg>
+                    Please arrive at least 1 hour before closing.
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 vpr-section vpr-instructions">
+
+                <div class="vpr-section-heading">
+                    <h3>Pick Up Instructions</h3>
+                    <div class="circle-icon">
+                        <svg class="svg-icon-circle">
+                          <use xlink:href="file:///android_asset/evp/sprite.svg#icon-icon-instructions"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="instructions-wraper">
+                    <div class="instructions-step-1">
+                        <p class="label-inst label-inst-1">Provide <strong>Buyer</strong> and <strong>Title</strong> to loader operator</p>
+                        <h2>Buyer: <span>~buyerName~</span></h2>
+                        <h6>Pullout: ~buyerTitle~</h6>
+                    </div>
+                    <div class="instructions-step-2">
+                        <p class="label-inst label-inst-2">Provide your <strong>PIN</strong> for verification</p>
+                        <h2>PIN: <span>~pinNumber~</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 vpr-section vpr-vehicles">
+                <div class="vehicles-info-wraper">
+                    <div class="vpr-section-heading">
+                        <h3 class="left">Vehicle(s) Set for Pick Up</h3>
+                        <h3 class="right">~vehicleCount~ Vehicle(s)</h3>
+                        <div class="circle-icon">
+                            <svg class="svg-icon-circle svg-icon-pickup">
+                              <use xlink:href="file:///android_asset/evp/sprite.svg#icon-icon-pickup"></use>
+                            </svg>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <label>Notes</label>
+                    <p>~branchNote~</p>
+                    ~vehicleTable~
+                </div>
+            </div>
+        </div>
+        </div>

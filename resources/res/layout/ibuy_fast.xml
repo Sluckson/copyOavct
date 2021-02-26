@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="@string/lbl_ibuy_fast" style="@style/TabHeader"/>
+    <include layout="@layout/tab_header_border"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/container_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txt_vehicle_name" android:layout_width="match_parent" android:layout_marginTop="24dp" style="@style/Text.Bold"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <TextView android:text="@string/lbl_purchase_price" style="@style/Text.Normal"/>
+                <TextView android:text=" " style="@style/Text.Normal"/>
+                <TextView android:id="@+id/txt_price" style="@style/Text.Bold"/>
+            </LinearLayout>
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txt_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" style="@style/Text.Countdown"/>
+            <ImageView android:layout_width="192dp" android:layout_height="51dp" android:src="@drawable/ic_ibuy_fast_long" style="@style/Image.VehicleDetailStatus"/>
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txt_ibuy_fast_additional_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" style="@style/Text.Normal"/>
+            <Button android:id="@+id/btn_submit" android:layout_marginTop="12dp" android:text="@string/lbl_confirm_purchase" style="@style/Button.Bid"/>
+            <Button android:id="@+id/btn_cancel" android:layout_marginTop="12dp" android:text="@string/lbl_cancel" style="@style/Button.Normal"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

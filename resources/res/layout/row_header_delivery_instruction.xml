@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/row_header_delivery_instruction_0" android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/bdt_filter_seprator" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp">
+        <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/lbl_step_3" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#606060" android:id="@+id/tvHeaderMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/lbl_set_delivery_method_msg" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvSetForAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/lbl_set_same_delivery_for_all_stocks" android:drawablePadding="10dp" android:drawableStart="@drawable/selector_square_checked_unchecked" android:fontFamily="sans-serif"/>
+        <View android:id="@+id/viewSeparator2" android:background="@color/bdt_filter_seprator" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp" android:layout_marginStart="33dp"/>
+    </LinearLayout>
+</LinearLayout>

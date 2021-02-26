@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/iaa_bg_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/section_title_bar" layout="@layout/title_bar"/>
+    <TextView android:gravity="center" android:id="@+id/txt_header" android:paddingTop="10dp" android:text="@string/lbl_enter_pin" android:layout_below="@+id/section_title_bar" style="@style/SectionHeader"/>
+    <LinearLayout android:id="@+id/section_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/txt_header" android:layout_centerHorizontal="true">
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:id="@+id/txt_pin" style="@style/EditText.PinBoxHidden"/>
+            <EditText android:id="@+id/txt_pin_digit_1" style="@style/EditText.PinBox"/>
+        </FrameLayout>
+        <EditText android:id="@+id/txt_pin_digit_2" style="@style/EditText.PinBox"/>
+        <EditText android:id="@+id/txt_pin_digit_3" style="@style/EditText.PinBox"/>
+        <EditText android:id="@+id/txt_pin_digit_4" style="@style/EditText.PinBox"/>
+    </LinearLayout>
+    <Button android:id="@+id/btn_cancel" android:background="#1d67b2" android:layout_margin="@dimen/container_padding" android:text="@string/lbl_cancel" android:layout_below="@+id/section_pin" android:layout_centerHorizontal="true" style="@style/Button.IBuyFast"/>
+</RelativeLayout>

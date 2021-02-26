@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/menu_tobepickedup_clearselected" android:title="@string/lbl_menu_clear_selected" app:showAsAction="never"/>
+    <item android:id="@+id/menu_tobepickedup_select_all" android:title="@string/lbl_menu_select_all" app:showAsAction="never"/>
+</menu>

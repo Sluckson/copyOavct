@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" style="@style/ResultItem">
+    <LinearLayout android:orientation="vertical" android:id="@+id/section_status" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/row_padding" android:layout_alignParentLeft="true">
+        <TextView android:textColor="@color/auction_countdown" android:gravity="center" android:id="@+id/txt_auction_phase" android:background="@drawable/bg_pure_white_with_gray_border_single" android:layout_width="@dimen/status_icon_large_width" android:layout_height="@dimen/status_icon_large_height" style="@style/Text.Small"/>
+        <FrameLayout android:id="@+id/frameLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/txt_bid_live" android:background="@drawable/bid_live_btn_selector" android:padding="4dp" android:visibility="visible" android:layout_width="@dimen/status_icon_large_width" android:layout_marginLeft="4.5dp" android:layout_marginTop="7dp" android:text="Bid Live" style="@style/Text.Small"/>
+            <ImageView android:id="@+id/nf_indicator" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icon_star"/>
+        </FrameLayout>
+        <TextView android:textColor="@color/iaa_txt_blue" android:id="@+id/txt_view_auction" android:paddingTop="4dp" android:visibility="invisible" android:text="@string/lbl_view_auction" android:layout_centerHorizontal="true" style="@style/Text.Small"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/section_detail" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/section_status" android:layout_alignParentRight="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_public_auction" android:visibility="visible" android:src="@drawable/ic_public_auction" android:layout_alignParentRight="true" style="@style/Image.AuctionDetailStatus"/>
+            <TextView android:id="@+id/txt_name" android:layout_width="match_parent" android:layout_toLeftOf="@+id/img_public_auction" android:layout_alignParentLeft="true" style="@style/Text.Row.Title"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/txt_live_date" style="@style/Text.Row.Detail"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/txt_vehicle_count" style="@style/Text.Row.Detail"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

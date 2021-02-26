@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/iaa_black" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/dashboardlayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/relative_layout_user" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/user_picture" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_image" android:layout_alignParentTop="true"/>
+                <TextView android:textSize="14sp" android:textColor="@color/iaa_white" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="12dp" android:text="Linders" android:layout_toRightOf="@+id/user_picture"/>
+                <TextView android:textSize="14sp" android:textColor="@color/iaa_white" android:id="@+id/lbl_buyer_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="12dp" android:text="Buyer ID: " android:layout_toRightOf="@+id/user_picture" android:layout_below="@+id/user_name"/>
+                <TextView android:textColor="@color/iaa_white" android:id="@+id/buyer_id_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23455" android:layout_toRightOf="@+id/lbl_buyer_id" android:layout_alignBaseline="@+id/lbl_buyer_id"/>
+                <TextView android:textSize="14sp" android:textColor="@color/iaa_white" android:id="@+id/btn_logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginRight="12dp" android:text="log out" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/showMYVehicleRelativeLayout" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp">
+                <TextView android:textSize="14sp" android:textColor="@color/iaa_white" android:id="@+id/lbl_show_vehicle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show My Vehicles Only" android:layout_alignParentLeft="true"/>
+                <Switch android:id="@+id/show_vehicle_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <include layout="@layout/pre_sale_layout"/>
+            <include layout="@layout/post_sale_layout"/>
+            <include layout="@layout/won_history_layout"/>
+            <RelativeLayout android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp">
+                <TextView android:textSize="18sp" android:textColor="@color/iaa_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textAllCaps="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/contactUs" android:background="@color/iaa_black" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/contactlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp">
+                    <ImageView android:id="@+id/icon_contactus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_contactus" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="18sp" android:textColor="@color/iaa_white" android:id="@+id/lbl_contactus" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contact Us" android:layout_toRightOf="@+id/icon_contactus" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/icon_prebids"/>
+                    <ImageView android:textSize="18sp" android:id="@+id/contact_right_arrow" android:background="@color/iaa_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/forward_arrow_wht" android:text="43" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar_my_account" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</ScrollView>

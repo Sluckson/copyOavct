@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/navigation_graph_auction_main_list" app:startDestination="@+id/AuctionMainFragment">
+    <fragment android:label="navigation_AM_fragment" android:name="com.iaai.android.bdt.feature.auctionMainPage.AuctionMainListFragment" android:id="@+id/AuctionMainFragment"/>
+</navigation>

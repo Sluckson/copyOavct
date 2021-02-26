@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/navigation_graph_landing" app:startDestination="@+id/LandingViewPagerFragment">
+    <fragment android:label="navigation_viewPager_product_detail_fragment" android:name="com.iaai.android.bdt.feature.landing.LandingViewPagerFragment" android:id="@+id/LandingViewPagerFragment">
+        <action android:id="@+id/action_landing_view_pager_pd_to_pre_bid" app:destination="@+id/LandingPreBidFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+        <action android:id="@+id/action_landing_view_pager_pd_to_buy_now" app:destination="@+id/LandingBuyNowFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+        <action android:id="@+id/action_landing_view_pager_pd_to_cost_calculator" app:destination="@+id/LandingCostCalculatorFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+        <action android:id="@+id/action_landing_view_pager_pd_to_chrome_section" app:destination="@+id/LandingChromeSectionFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+    </fragment>
+    <fragment android:label="LandingPreBidFragment" android:name="com.iaai.android.bdt.feature.productDetail.prebid.PreBidFragment" android:id="@+id/LandingPreBidFragment"/>
+    <fragment android:label="LandingBuyNowFragment" android:name="com.iaai.android.bdt.feature.productDetail.buyNow.BuyNowFragment" android:id="@+id/LandingBuyNowFragment"/>
+    <fragment android:label="LandingCostCalculatorFragment" android:name="com.iaai.android.bdt.feature.productDetail.costCalculator.CostCalculatorFragment" android:id="@+id/LandingCostCalculatorFragment"/>
+    <fragment android:label="LandingChromeSectionFragment" android:name="com.iaai.android.bdt.feature.productDetail.chromeSection.ChromeSectionFragment" android:id="@+id/LandingChromeSectionFragment"/>
+</navigation>

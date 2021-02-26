@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TabHeaderWhite">
+        <AutoCompleteTextView android:textAppearance="@style/TextAppearance.Medium" android:id="@+id/txt_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/keyword_Hint" android:singleLine="true" android:maxLength="75" android:layout_toLeftOf="@+id/btn_search" android:layout_alignBottom="@+id/btn_scan" android:layout_alignParentLeft="true" android:imeOptions="actionGo"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#1d67b2" android:gravity="center_vertical" android:id="@+id/btn_scan" android:padding="8dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:minHeight="48dp" android:text="@string/lbl_scan" android:maxEms="4" android:singleLine="true" android:layout_alignParentRight="true" android:textAllCaps="true"/>
+        <ImageView android:id="@+id/btn_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_find" android:layout_toLeftOf="@+id/btn_scan" android:layout_alignTop="@+id/txt_search" android:layout_alignBottom="@+id/txt_search" style="@style/CustomImageView"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_refiner_search" android:text="@string/lbl_search_static" android:layout_alignParentBottom="true" style="@style/Button.Search"/>
+        <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_refiner_search"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout" android:tag="layout/fragment_find_vehicle_search_layout_0" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <FrameLayout android:background="#ccffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/bdt_gray_darkest" android:id="@+id/tv_find_vehicle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/find_vehicles" android:textAllCaps="false" android:fontFamily="sans-serif-condensed" android:layout_marginStart="30dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_find_vehicle">
+                <com.google.android.material.tabs.TabLayout android:id="@+id/tl_find_vehicle" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabGravity="0" app:tabIndicatorColor="@color/bdt_red" app:tabIndicatorHeight="2dp" app:tabMaxWidth="0dp" app:tabMode="1" app:tabSelectedTextColor="@color/bdt_red" app:tabTextAppearance="@style/BDT.Custom.TabLayout" app:tabTextColor="@color/bdt_gray_dark"/>
+                <com.iaai.android.bdt.base.CustomViewPager android:id="@+id/vehicle_search_pager" android:background="@color/iaa_white" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false" android:elevation="2dp"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

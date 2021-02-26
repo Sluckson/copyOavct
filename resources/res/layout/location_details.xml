@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/location_name" style="@style/TabHeader"/>
+        <include layout="@layout/tab_header_border"/>
+        <TextView android:gravity="center" android:id="@+id/location_address_line1" android:layout_marginTop="10dp" style="@style/DetailText"/>
+        <TextView android:gravity="center" android:id="@+id/location_address_line2" android:layout_marginBottom="10dp" style="@style/DetailText"/>
+        <TextView android:text="@string/title_branch_manager" style="@style/SectionHeader"/>
+        <TextView android:gravity="center" android:id="@+id/location_branch_manager_name" style="@style/DetailText"/>
+        <TextView android:gravity="center" android:id="@+id/location_branch_manager_email" android:layout_marginBottom="10dp" style="@style/DetailText"/>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <ImageView android:id="@+id/image_phone" android:paddingLeft="5dp" android:src="@drawable/ic_phone" android:layout_below="@+id/branch_address" style="@style/Image.PhoneIcon"/>
+            <TextView android:layout_gravity="center" android:id="@+id/location_detail_phone" android:padding="5dp" android:layout_toRightOf="@+id/image_phone" style="@style/Text.Normal"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <ImageView android:id="@+id/image_fax" android:paddingLeft="5dp" android:src="@drawable/fax" style="@style/Image.PhoneIcon"/>
+            <TextView android:layout_gravity="center" android:id="@+id/location_detail_fax" android:padding="5dp" android:layout_toRightOf="@+id/image_fax" style="@style/Text.Normal"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/location_detail_next_auction_header" android:text="@string/lbl_next_auction" style="@style/SectionHeader"/>
+        <Button android:enabled="false" android:id="@+id/btn_next_auction" android:layout_margin="@dimen/container_padding" style="@style/Button.Normal"/>
+        <Button android:id="@+id/btn_auction_after_next" android:visibility="gone" android:layout_marginLeft="@dimen/container_padding" android:layout_marginRight="@dimen/container_padding" android:layout_marginBottom="@dimen/container_padding" style="@style/Button.Normal"/>
+        <TextView android:text="@string/auction" style="@style/SectionHeader"/>
+        <TextView android:id="@+id/location_detail_auction" style="@style/LocationDetailText"/>
+        <TextView android:text="@string/title_onsite_preview" style="@style/SectionHeader"/>
+        <TextView android:id="@+id/location_detail_onsite" style="@style/LocationDetailText"/>
+        <TextView android:text="@string/title_office_hours" style="@style/SectionHeader"/>
+        <TextView android:id="@+id/location_detail_office_hours" style="@style/LocationDetailText"/>
+        <TextView android:id="@+id/location_detail_office_hours_holiday" style="@style/LocationDetailText"/>
+        <TextView android:text="@string/title_yard_hours" style="@style/SectionHeader"/>
+        <TextView android:id="@+id/location_detail_yard_hours" style="@style/LocationDetailText"/>
+        <TextView android:id="@+id/location_detail_yard_hours_holiday" style="@style/LocationDetailText"/>
+        <TextView android:text="@string/title_additional_info" style="@style/SectionHeader"/>
+        <TextView android:id="@+id/location_detail_additional_info" style="@style/LocationDetailText"/>
+    </LinearLayout>
+</ScrollView>

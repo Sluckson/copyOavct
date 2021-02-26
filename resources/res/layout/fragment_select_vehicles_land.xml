@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/selectVehicles" android:tag="layout/fragment_select_vehicles_land_0" android:background="@color/bdt_gray_lightest" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/selectVehiclesToolbar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/custom_action_bar"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/llCheckOutLayout" android:background="@color/bdt_gray_lightest" android:padding="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="16sp" android:textColor="@color/bdt_white" android:id="@+id/btnCheckOut" android:background="@color/bdt_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_review_payment" android:textAllCaps="false"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/flContainer" android:tag="binding_1" android:layout_width="@dimen/ten_inch_tablet_width" android:layout_height="match_parent" android:layout_above="@+id/llCheckOutLayout" android:layout_below="@+id/selectVehiclesToolbar" android:layout_marginStart="5dp" android:layout_marginEnd="5dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSelectedVehicle" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:visibility="gone" layout="@layout/empty_recycler_view"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pbToBePaid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    </FrameLayout>
+    <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@+id/auction_sales_nav_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toEndOf="@+id/flContainer" app:defaultNavHost="false"/>
+</RelativeLayout>

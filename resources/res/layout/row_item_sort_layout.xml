@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_sort_container" android:tag="layout/row_item_sort_layout_0" android:background="@drawable/rounded_corner_sort_layout" android:focusable="true" android:layout_width="match_parent" android:layout_height="50dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+    <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@drawable/tv_filter_text_color" android:id="@+id/tv_Sort" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="sans-serif" android:layout_marginStart="14dp"/>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llAuctionSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <EditText android:ellipsize="end" android:id="@+id/etSearch" android:focusable="false" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/hint_auction_keyword_hint_text" android:singleLine="true" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-&apos; " android:drawablePadding="10dp" android:layout_weight="1" android:inputType="none" android:imeOptions="actionDone" android:drawableStart="@drawable/ic_search_black_"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:weightSum="2" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llAuctionMainDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bdt_calendar"/>
+                <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darker" android:gravity="center_horizontal" android:id="@+id/tvAuctionDate" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Fri, Mar 31" android:layout_weight="1" android:fontFamily="sans-serif"/>
+                <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_view_down" android:layout_marginStart="8dp" android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+            <View android:background="@color/bdt_gray" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <CheckBox android:id="@+id/cvPublicAuction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/bdt_gray_darker"/>
+                <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darker" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Public Auctions" android:fontFamily="sans-serif"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/bdt_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp"/>
+        <RelativeLayout android:id="@+id/bidding_ViewMore" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/bdt_gray_darkest" android:id="@+id/tvSort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="SORT" android:fontFamily="sans-serif"/>
+            <ImageView android:id="@+id/ivSort" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="8dp" android:src="@drawable/ic_dropdown_arrow_down" android:layout_toRightOf="@+id/tvSort"/>
+            <ImageView android:id="@+id/ivAnyDistance" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="8dp" android:src="@drawable/ic_view_down" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darker" android:gravity="center_horizontal" android:id="@+id/tvAnyDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Any Distance" android:layout_toLeftOf="@+id/ivAnyDistance" android:fontFamily="sans-serif" android:layout_marginStart="4dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location" android:layout_toLeftOf="@+id/tvAnyDistance"/>
+        </RelativeLayout>
+        <View android:background="@color/bdt_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp"/>
+        <LinearLayout android:id="@+id/llShowLearnMoreLink" android:background="@color/bdt_gray_lightest" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="10sp" android:textStyle="normal" android:textColor="#000000" android:id="@+id/tvLearnMore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="14dp" android:layout_marginBottom="12dp" android:text="Learn More" android:fontFamily="sans-serif" android:letterSpacing="0.03" style="@style/Text.Bold"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvAuctionList" android:focusable="true" android:visibility="visible" android:scrollbars="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/faAuctionMainUpScroll" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30dp" android:src="@drawable/ic_top_arrow" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:backgroundTint="@color/bdt_red"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/empty_recycler_view"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pbAuctionMain" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+</FrameLayout>

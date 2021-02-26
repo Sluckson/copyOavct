@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/row_item_fast_search_more_facet_radio_button_0" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="30dp" android:paddingEnd="24dp">
+    <RadioButton android:id="@+id/rlRadioButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sample"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

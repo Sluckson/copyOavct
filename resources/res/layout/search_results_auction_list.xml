@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/search_results_header" style="@style/TabHeader"/>
+    <FrameLayout android:id="@+id/search_results_header_Auction" android:visibility="gone" style="@style/TabHeader"/>
+    <include layout="@layout/tab_header_border"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageButton android:id="@+id/up_scroll_button" android:background="@drawable/up_arrow_circle_bg" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30dp" android:src="@drawable/ic_top_arrow" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView android:gravity="center" android:id="@+id/auction_empty" android:visibility="gone" style="@style/DetailText"/>
+</LinearLayout>

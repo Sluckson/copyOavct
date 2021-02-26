@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/iaa_bg_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/section_title_bar" layout="@layout/title_bar_login_with_back"/>
+    <include layout="@layout/tab_header_border"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+        <TextView android:textSize="24sp" android:textColor="@android:color/black" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_login_bid"/>
+        <RelativeLayout android:orientation="horizontal" android:paddingTop="8dp" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/txt_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/remember_me">
+                <EditText android:id="@+id/txt_user_id_ibid" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/hint_username" android:maxLength="@integer/max_length_username" android:layout_weight="1" android:inputType="none|text|textNoSuggestions|textEmailAddress" android:imeOptions="actionNext"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageButton android:id="@+id/remember_me" android:background="@drawable/btn_save" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="5dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/remember_me" android:layout_below="@+id/txt_input_layout">
+                <EditText android:id="@+id/txt_password_ibid" android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_password" android:inputType="textPassword" android:imeOptions="actionGo"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton android:enabled="false" android:id="@+id/btn_login_ibid" android:layout_marginTop="20dp" android:text="@string/lbl_submit" android:height="30dp" android:textAllCaps="true" style="@style/Button.Normal"/>
+        <TextView android:textSize="16sp" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:text="@string/msg_anonymous_view"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/chk_agree_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="@string/lbl_accept_terms_view_only"/>
+            <TextView android:textColor="@color/iaa_red" android:id="@+id/txt_terms" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/terms_of_use"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton android:enabled="true" android:id="@+id/btn_view_only" android:layout_marginTop="15dp" android:text="@string/lbl_view_only" android:height="40dp" style="@style/Button.Normal"/>
+    </LinearLayout>
+</LinearLayout>

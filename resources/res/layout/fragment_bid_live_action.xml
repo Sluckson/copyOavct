@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llBidLive" android:paddingTop="24dp" android:paddingBottom="8dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/bdt_gray" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Current Bid: " android:lineSpacingExtra="12sp" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvCurrentBid" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="$0.00" android:lineSpacingExtra="12sp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <Button android:textColor="@color/iaa_white" android:id="@+id/btnBidLive" android:background="@color/iaa_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="@string/lbl_bid_bdt" android:textAllCaps="false" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/bdt_gray" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Status: " android:lineSpacingExtra="12sp" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvAuctionBeginsAt" android:layout_width="wrap_content" android:layout_height="match_parent" android:lineSpacingExtra="12sp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

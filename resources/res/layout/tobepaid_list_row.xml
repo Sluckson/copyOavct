@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/dashboard_table_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:layout_gravity="center" android:id="@+id/chk_select_vehicle" android:paddingLeft="2dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/txt_year_make_model_tbp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2008 Honda Accord" style="@style/ToBePaidText.Row.Title"/>
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/lbl_for_stock_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_tobepaid_stk" style="@style/ToBePaidText.Row.Detail"/>
+            <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_stock_no" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stock Number" android:layout_toRightOf="@+id/lbl_for_stock_no" android:layout_alignBaseline="@+id/lbl_for_stock_no" android:fontFamily="" style="@style/ToBePaidText.Row.Detail"/>
+            <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:ellipsize="marquee" android:id="@+id/txt_vin_tbp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vin Number" android:layout_toRightOf="@+id/txt_stock_no" android:layout_alignBaseline="@+id/lbl_for_stock_no" style="@style/ToBePaidText.Row.Detail"/>
+            <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_branch_tbp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/lbl_for_stock_no" style="@style/ToBePaidText.Row.Detail"/>
+            <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_auction_date_tbp" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/txt_branch_tbp" android:layout_alignBaseline="@+id/txt_branch_tbp" style="@style/ToBePaidText.Row.Detail"/>
+            <TextView android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_bidder_name" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/txt_auction_date_tbp" android:layout_alignBaseline="@+id/txt_branch_tbp" style="@style/ToBePaidText.Row.Detail"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lyt_payment_section" android:paddingTop="@dimen/container_padding" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/txt_branch_tbp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_payment" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textStyle="normal" android:id="@+id/txt_total_due" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ToBePaidText.Row.Detail"/>
+                    <TextView android:textSize="16sp" android:textStyle="normal" android:id="@+id/txt_due_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Due By:" style="@style/ToBePaidText.Row.Detail"/>
+                </LinearLayout>
+                <TextView android:textSize="14dp" android:textStyle="bold" android:id="@+id/txt_ref_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Due By:" style="@style/ToBePaidText.Row.Detail"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_partial_payment" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/iaa_txt_green" android:id="@+id/txt_paid" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ToBePaidText.Row.Detail"/>
+                    <TextView android:textSize="14sp" android:ellipsize="end" android:id="@+id/txt_confirmation" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ToBePaidText.Row.Detail"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_Bid" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ToBePaidText.Row.Detail"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_fees" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableEnd="@drawable/tobepaid_fee_down" style="@style/ToBePaidText.Row.Detail"/>
+                        <View android:id="@+id/line_under_fees" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/grd_fees" android:background="@drawable/fees_custom_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.iaai.android.old.widgets.NonScrollableGridView android:id="@+id/gridView" android:scrollbars="none" android:layout_width="0dp" android:layout_height="wrap_content" android:stretchMode="columnWidth" android:columnWidth="0dp" android:numColumns="auto_fit" android:layout_weight="1"/>
+                </LinearLayout>
+                <TextView android:textColor="@color/iaa_red" android:layout_gravity="left" android:id="@+id/txt_error_msg" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" style="@style/ToBePaidText.Row.Detail"/>
+                <LinearLayout android:id="@+id/contextual_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/payment_disable_icon" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_new"/>
+                    <TextView android:textColor="#1d67b2" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contextual_text"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

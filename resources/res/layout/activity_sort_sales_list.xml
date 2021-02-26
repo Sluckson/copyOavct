@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            <RelativeLayout android:theme="@style/BDT.Base.MyTheme" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/img_back" android:background="@null" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cross" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#4d4d4d" android:gravity="center" android:id="@+id/toolbar_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_bdt_sort_title" android:layout_toRightOf="@+id/img_back" android:layout_centerVertical="true" android:fontFamily="sans-serif-condensed" android:layout_marginEnd="60dp"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/cl_sort_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_sort" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/bg_iaa_red_gradient" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_navigation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageButton android:gravity="center_vertical" android:id="@+id/left_button" android:background="@android:color/transparent" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/back_disable"/>
+            <ImageButton android:gravity="center_vertical" android:id="@+id/right_button" android:background="@android:color/transparent" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next_disable"/>
+        </LinearLayout>
+        <TextView android:id="@+id/vdYearMakeModelIStockID" android:text="@string/premium_vehicle_report" android:layout_toLeftOf="@+id/linearLayout" android:layout_toRightOf="@+id/ll_navigation" android:layout_alignBottom="@+id/linearLayout" android:layout_centerVertical="true" style="@style/TabHeader"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout" android:paddingTop="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:gravity="center_vertical" android:id="@+id/download_button" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_action_av_download"/>
+            <ImageButton android:gravity="center_vertical" android:id="@+id/close_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_action_content_remove" android:layout_alignParentRight="true"/>
+        </LinearLayout>
+        <include layout="@layout/tab_header_border"/>
+    </RelativeLayout>
+    <WebView android:id="@+id/premium_vehicle_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+</LinearLayout>

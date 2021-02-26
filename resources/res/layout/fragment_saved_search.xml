@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_saved_search_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/savedFab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_top_arrow" app:backgroundTint="@color/bdt_red"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/viewSeparator1" android:background="@color/bdt_filter_seprator" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSavedSearch" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pbSavedSearch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llEmptySearchResult" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/bdt_gray_darkest" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_title_error_save_search" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif" android:letterSpacing="0.02"/>
+        <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darkest" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/lbl_sub_title_error_save_search" android:lineSpacingExtra="8sp" android:fontFamily="sans-serif" android:letterSpacing="0.02"/>
+    </LinearLayout>
+</FrameLayout>

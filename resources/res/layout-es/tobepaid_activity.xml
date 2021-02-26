@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/iaa_white" android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageButton android:gravity="center_vertical" android:id="@+id/back_button" android:background="@android:color/transparent" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left_red"/>
+        <TextView android:textSize="16sp" android:textColor="@color/iaa_black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_header_tobepaid_selection" android:paddingLeft="20dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/lbl_tobe_paid" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/branch_sorting" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/sort_by" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/iaa_black" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/branch_selection" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="-5dp" android:text="@string/lbl_all" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/iaa_black" android:ellipsize="marquee" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/sort_selection" android:layout_width="match_parent" android:layout_height="0dp" android:text="Due(Extended)" android:singleLine="true" android:layout_weight="1" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/branch_sorting_overflow" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_three_dots_vertical"/>
+    </LinearLayout>
+    <include layout="@layout/tab_header_border"/>
+    <TextView android:textSize="20sp" android:layout_gravity="center_horizontal" android:id="@+id/no_vehicles_found" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_items_avliable_for_payment"/>
+    <View android:background="@color/iaa_gray_bg_balance" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_method_selection" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/lyt_proceede_to_pay" android:background="@drawable/bottom_bgshadow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30dp">
+                    <TextView android:textSize="16sp" android:id="@+id/txt_proceed_to_payment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:text="@string/proceed_tp_payment" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ToBePaidText.Row.Detail"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_centerHorizontal="false" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/divider_layout" android:background="@drawable/proceednext_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_payment_details_single" android:background="@drawable/bottom_bgshadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/payment_logo" android:padding="2dp" android:layout_width="80dp" android:layout_height="50dp" android:src="@drawable/afc_logo"/>
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bottom_dividerline"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_credit_limit" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/lbl_credit_remaining" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ajsdbf" style="@style/ToBePaidText.Row.Detail"/>
+                        <TextView android:id="@+id/val_credit_remaining" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ToBePaidText.Row.Title"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/iaa_red" android:ellipsize="end" android:id="@+id/txt_error" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableEnd="@drawable/tobepaid_fee_down"/>
+                        <TextView android:textColor="@color/iaa_red" android:id="@+id/txt_errorFull" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:drawableEnd="@drawable/tobepaid_fee_up"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

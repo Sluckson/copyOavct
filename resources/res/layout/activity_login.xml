@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="140dp">
+                        <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/auction_main_page_card_view_margin" android:layout_marginTop="@dimen/auction_main_page_card_view_margin" android:layout_marginRight="@dimen/auction_main_page_card_view_margin" android:layout_marginBottom="@dimen/auction_main_page_card_view_margin" app:cardCornerRadius="@dimen/dashboard_productdtl_card_view_corner_radius" app:cardElevation="2dp" app:cardUseCompatPadding="true">
+                            <RelativeLayout android:orientation="horizontal" android:id="@+id/relativelayout" android:padding="12dp" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                                <com.google.android.material.textfield.TextInputLayout android:id="@+id/txt_input_layout_username" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <EditText android:id="@+id/txt_user_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/hint_username" android:maxLength="@integer/max_length_username" android:layout_weight="1" android:inputType="none|text|textNoSuggestions|textEmailAddress" android:imeOptions="actionNext"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <ImageButton android:id="@+id/clear_text" android:background="@drawable/ic_login_clear" android:padding="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                                <com.google.android.material.textfield.TextInputLayout android:id="@+id/txt_input_layout_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/txt_input_layout_username">
+                                    <EditText android:id="@+id/txt_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_password" android:inputType="textPassword" android:imeOptions="actionGo"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/login_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/txt_input_layout_password">
+                                    <TextView android:enabled="false" android:textStyle="bold" android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/txt_login_btn" android:background="@drawable/login_btn_selector" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_login" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <TextView android:textColor="@color/iaa_terms_of_use" android:gravity="center" android:id="@+id/forgot_password_text_view" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/forgot_password" android:layout_below="@+id/login_layout"/>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <RelativeLayout android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_view1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/auction_main_page_card_view_margin" android:layout_marginTop="@dimen/auction_main_page_card_view_margin" android:layout_marginRight="@dimen/auction_main_page_card_view_margin" android:layout_marginBottom="@dimen/auction_main_page_card_view_margin" app:cardCornerRadius="@dimen/dashboard_productdtl_card_view_corner_radius" app:cardElevation="2dp" app:cardUseCompatPadding="true">
+                            <RelativeLayout android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RelativeLayout android:id="@+id/register_now_layout" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:enabled="true" android:textStyle="bold" android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/lbl_register_now" android:background="@drawable/login_btn_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/register_now" android:layout_weight="1"/>
+                                </RelativeLayout>
+                                <View android:background="@color/gray_light" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="0dp" android:layout_below="@+id/register_now_layout"/>
+                                <RelativeLayout android:id="@+id/contact_us_layout" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/register_now_layout">
+                                    <TextView android:enabled="true" android:textStyle="bold" android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/lbl_contact_us" android:background="@drawable/login_btn_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_contact_us" android:layout_weight="1"/>
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/card_view1">
+                            <TextView android:textSize="16sp" android:textColor="@color/iaa_terms_of_use" android:id="@+id/txt_terms" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_terms_of_use"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110dp" android:src="@drawable/user_image" android:adjustViewBounds="true"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

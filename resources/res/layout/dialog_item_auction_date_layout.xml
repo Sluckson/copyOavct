@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/bdt_gray_darkest" android:id="@+id/tvDate1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Today sadsad Aug. 2"/>
+        <view android:id="@+id/vVertical" android:background="@color/bdt_gray_darkest" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="16sp" android:textColor="@color/bdt_gray_darkest" android:id="@+id/tvDate2" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wednesday Aug. 3"/>
+    </LinearLayout>
+    <view android:background="@color/bdt_gray_darkest" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

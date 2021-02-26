@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/iaa_white" android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageButton android:gravity="center_vertical" android:id="@+id/back_button" android:background="@android:color/transparent" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left_red"/>
+        <TextView android:textSize="18sp" android:textColor="@color/iaa_black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_header_tobepaid_selection" android:paddingLeft="30dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/lbl_tobe_paid" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/branch_sorting" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/sort_by" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/iaa_black" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/branch_selection" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="-5dp" android:text="@string/lbl_all" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/iaa_black" android:ellipsize="marquee" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/sort_selection" android:layout_width="match_parent" android:layout_height="0dp" android:text="Due(Extended)" android:singleLine="true" android:layout_weight="1" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/branch_sorting_overflow" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_three_dots_vertical"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_details" android:background="@drawable/proceednext_bgshadow" android:layout_width="match_parent" android:layout_height="70dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/selection" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/select_all" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+            <TextView android:textSize="11sp" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_all"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/row_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_row1_value" android:layout_width="match_parent" android:layout_height="0dp" android:text="row1Value" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:gravity="center" android:id="@+id/tv_row1_label" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="0dp" android:text="row1Label" android:layout_weight="1"/>
+            </LinearLayout>
+            <ImageView android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="12dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:src="@drawable/bal_divider_minus" android:scaleType="fitCenter"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/row_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/iaa_txt_green" android:gravity="center" android:id="@+id/tv_row3_value" android:layout_width="match_parent" android:layout_height="0dp" android:text="row3Value" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:gravity="center" android:id="@+id/tv_row3_label" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="0dp" android:text="row3Label" android:layout_weight="1"/>
+            </LinearLayout>
+            <ImageView android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="12dp" android:layout_height="match_parent" android:src="@drawable/bal_divider_equal" android:scaleType="fitCenter"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/row_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_row2_value" android:layout_width="match_parent" android:layout_height="0dp" android:text="row2Value" android:layout_weight="1"/>
+                <TextView android:textSize="11sp" android:gravity="center" android:id="@+id/tv_row2_label" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="0dp" android:text="Remaining" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragment_container_tobepaid_selection" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <Button android:textSize="18sp" android:textStyle="bold" android:textColor="@color/iaa_white" android:id="@+id/btn_payment" android:background="@drawable/btn_green_disabled" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/btn_pay_tobe_paid"/>
+</LinearLayout>

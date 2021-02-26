@@ -1,0 +1,16 @@
+
+</head>
+    <body>
+        <div style="position:relative">
+
+        <div id="deepzoom" style="width:auto;height:auto;overflow:hidden; align-content:center" ></div>
+        <div id="toolbarDiv" style="position:absolute; left:-30px; top:-10px">
+            <ul>
+                <li id="zoomin" style="margin-right:10px"><img src="http://qamapp.iaai.com/Images/zoomin.png"></li>
+                <li id="zoomout" style="margin-right:10px"><img src="http://qamapp.iaai.com/Images/zoomout.png"></li>
+                <li id="home"><img src="http://qamapp.iaai.com/Images/reset.png"></li>
+            </ul>
+        </div>
+        </div>
+    </body>
+</html>

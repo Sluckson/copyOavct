@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/iaa_white" android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageButton android:gravity="center_vertical" android:id="@+id/back_button" android:background="@android:color/transparent" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_arrow_left_red"/>
+        <TextView android:textSize="18sp" android:textColor="@color/iaa_black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txt_header_tobepaid_selection" android:paddingLeft="30dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/lbl_afc_fianceprograms" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/iaa_black" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18dp" android:textColor="@color/iaa_white" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/lbl_selection_afc_method" android:layout_weight="1"/>
+        <TextView android:textColor="@color/iaa_link_blue" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/txt_more_info" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/lbl_more_info"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_details" android:background="@drawable/proceednext_bgshadow" android:padding="0dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:gravity="center" android:id="@+id/txt_stock_count" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_items_count" android:layout_below="@+id/txt_stock_count" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+        <ImageView android:background="@drawable/background_arrow_headerbar" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <RelativeLayout android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+            <TextView android:textSize="16sp" android:gravity="center_vertical" android:id="@+id/textView" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/lbl_finance_count" android:layout_centerVertical="true"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/iaa_txt_green" android:gravity="center_vertical" android:id="@+id/txt_finance_count" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/textView" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="12sp" android:gravity="center_vertical" android:paddingTop="8dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/usd_text" android:layout_toRightOf="@+id/txt_finance_count" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:gravity="center_vertical" android:id="@+id/chk_afc_standard" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp"/>
+                <TextView android:id="@+id/txt_afc_method" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:background="@color/iaa_gray_bg_balance" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <CheckBox android:gravity="center_vertical" android:id="@+id/chk_buy_n_go" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp"/>
+                <TextView android:id="@+id/txt_buy_n_go" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:background="@color/iaa_gray_bg_balance" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <TextView android:textColor="@color/iaa_link_blue" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txt_terms_of_use" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/terms_of_use" android:drawableRight="@drawable/arrow_next" android:drawablePadding="5dp"/>
+            <View android:background="@color/iaa_gray_bg_balance" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="18sp" android:textColor="@color/iaa_white" android:layout_gravity="center_horizontal" android:id="@+id/btn_agree_of_terms" android:background="@drawable/btn_green_disabled" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_agree_of_terms"/>
+</LinearLayout>

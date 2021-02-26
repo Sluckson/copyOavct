@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/frameLayout" android:background="@color/md_presale_list_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+        <include layout="@layout/search_results_alerts"/>
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/empty_view" android:background="@color/md_presale_list_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_vehicles_found"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

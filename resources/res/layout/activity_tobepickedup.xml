@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="10dp" style="@style/TabHeader">
+        <ImageButton android:id="@+id/img_back" android:background="@null" android:paddingLeft="8dp" android:paddingRight="8dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/abc_ic_ab_back_material" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageButton android:id="@+id/img_menu" android:background="@null" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dots_vertical" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/iaa_white" android:gravity="center_vertical" android:id="@+id/tobepicked_search_results_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/img_menu" android:layout_toRightOf="@+id/img_back" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/whiteBackground"/>
+</LinearLayout>

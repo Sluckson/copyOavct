@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/IAATheme.AppBarOverlay" android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            <RelativeLayout android:id="@+id/toolbar_relativelayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18dp" android:textColor="#ffffff" android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Toolbar Title" android:fontFamily="sans-serif-medium"/>
+                <TextView android:textSize="14dp" android:textColor="#ffffff" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/toolbar_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Toolbar Sub Title" android:layout_below="@+id/toolbar_title" android:fontFamily="sans-serif"/>
+                <TextView android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/txt_bid_live" android:background="@drawable/bid_live_btn_selector" android:padding="4dp" android:visibility="visible" android:layout_width="@dimen/status_icon_large_width" android:layout_marginTop="10dp" android:layout_marginRight="70dp" android:text="Bid Live" android:layout_alignParentRight="true" style="@style/Text.Small"/>
+            </RelativeLayout>
+            <ImageView android:layout_gravity="end" android:id="@+id/arrow_right" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_right_arrow"/>
+            <ImageView android:layout_gravity="end" android:id="@+id/arrow_left" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="12dp" android:src="@drawable/ic_left_arrow"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/frameLayout" android:background="@color/md_presale_list_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include layout="@layout/mdpresale_list"/>
+    </LinearLayout>
+    <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/empty_view" android:background="@color/md_presale_list_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/lbl_no_items_found"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

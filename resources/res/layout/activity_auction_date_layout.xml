@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            <RelativeLayout android:theme="@style/BDT.Base.MyTheme" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/imgAuctionDateBack" android:background="@null" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cross" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#4d4d4d" android:gravity="center_vertical" android:id="@+id/toolbar_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bdt_auction_date_range" android:layout_toRightOf="@+id/imgAuctionDateBack" android:layout_centerVertical="true" android:fontFamily="sans-serif-condensed" android:layout_marginStart="35dp"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View android:id="@+id/layout_border_line_date" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp" android:layout_below="@+id/toolbar" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/cl_sort_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_border_line_date">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvAuctionDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

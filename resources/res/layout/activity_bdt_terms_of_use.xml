@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/IAATheme.AppBarOverlay" android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/md_presale_list_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <WebView android:id="@+id/tvTermsNConditions" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </ScrollView>
+            <Button android:textColor="@color/iaa_report_txt_blue" android:id="@+id/btnAccept" android:background="@color/iaa_gray_bg_balance" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/terms_of_use_accept" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

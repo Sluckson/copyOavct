@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="left" android:id="@+id/txt_vehicle_subheader_1" android:text=" " android:layout_alignParentLeft="true" style="@style/Text.SubHeader"/>
+    <TextView android:gravity="right" android:id="@+id/txt_vehicle_subheader_2" android:layout_alignParentRight="true" style="@style/Text.SubHeader"/>
+    <TextView android:layout_width="match_parent" android:layout_toLeftOf="@+id/txt_vehicle_subheader_2" android:layout_toRightOf="@+id/txt_vehicle_subheader_1" style="@style/Text.SubHeader"/>
+</RelativeLayout>

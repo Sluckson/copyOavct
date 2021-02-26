@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/IAATheme.AppBarOverlay" android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:background="@color/md_presale_list_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout android:id="@+id/main_payment_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_method_selection" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/lyt_proceede_to_pay" android:background="@drawable/bottom_bgshadow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/layout_save_pullout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="3dp">
+                        <TextView android:textStyle="bold" android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/txt_proceed_to_payment" android:background="@drawable/rounded_corner_tbpu_bottom_button_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/proceed_tp_payment" android:layout_centerInParent="true" android:textAllCaps="true" android:elevation="3dp"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/divider_layout" android:background="@drawable/proceednext_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_payment_details_single" android:background="@drawable/bottom_bgshadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/payment_logo" android:padding="2dp" android:layout_width="80dp" android:layout_height="50dp" android:src="@drawable/afc_logo"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bottom_dividerline"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/lyt_credit_limit" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:id="@+id/lbl_credit_remaining" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ajsdbf" style="@style/ToBePaidText.Row.Detail"/>
+                            <TextView android:id="@+id/val_credit_remaining" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ToBePaidText.Row.Title"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/iaa_red" android:ellipsize="end" android:id="@+id/txt_error" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="2dp" android:drawableEnd="@drawable/tobepaid_fee_down"/>
+                            <TextView android:textColor="@color/iaa_red" android:id="@+id/txt_errorFull" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:drawablePadding="2dp" android:drawableEnd="@drawable/tobepaid_fee_up"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/frameLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/main_payment_layout">
+            <include layout="@layout/mdpresale_list"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/empty_view" android:background="@color/md_presale_list_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/lbl_no_items_found"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

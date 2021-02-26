@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_validate_otp_0" android:background="@color/bdt_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/md_presale_productdtl_bg" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp">
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/auction_main_page_card_view_margin" android:layout_marginTop="@dimen/auction_main_page_card_view_margin" android:layout_marginRight="@dimen/auction_main_page_card_view_margin" android:layout_marginBottom="@dimen/auction_main_page_card_view_margin" app:cardCornerRadius="@dimen/dashboard_productdtl_card_view_corner_radius" app:cardElevation="2dp" app:cardUseCompatPadding="true">
+                    <RelativeLayout android:orientation="horizontal" android:padding="12dp" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/llPIN" android:background="@drawable/search_view_background" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tvEnterPIN">
+                            <EditText android:textColor="#222222" android:ellipsize="end" android:id="@+id/etPIN" android:background="@android:color/transparent" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:maxLength="6" android:inputType="number" android:imeOptions="actionDone" android:layout_marginStart="4dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/llConfirmPIN" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/llPIN">
+                            <TextView android:enabled="false" android:textSize="16sp" android:textStyle="bold" android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/tvConfirmPIN" android:background="@drawable/login_btn_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/txt_verify_code" android:layout_weight="1"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_edit_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_below="@+id/llConfirmPIN">
+                            <TextView android:textSize="16sp" android:textColor="@color/iaa_bg_dark_gray" android:gravity="center" android:id="@+id/tvEmail" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:textSize="16sp" android:textColor="@color/iaa_terms_of_use" android:gravity="center" android:id="@+id/tvEditEmail" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_edit"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/llResendPIN" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/layout_edit_email">
+                            <TextView android:textStyle="bold" android:textColor="@color/iaa_vehicle_search_blue" android:gravity="center" android:id="@+id/tvResend" android:background="@drawable/start_over_btn_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/txt_resend_code"/>
+                        </LinearLayout>
+                        <TextView android:textSize="14sp" android:textColor="@color/iaa_black" android:id="@+id/tvVerificationMsg" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verification_text"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/iaa_bg_dark_gray" android:id="@+id/tvEnterPIN" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_enter_verification_code" android:layout_below="@+id/tvVerificationMsg"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/pbConfirmPIN" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+        </FrameLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

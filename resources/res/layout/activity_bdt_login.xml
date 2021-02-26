@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_bdt_login_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/ivIAALogo" android:layout_width="60dp" android:layout_height="45dp" android:src="@drawable/ic_iaa_logo_red"/>
+                        <ImageView android:id="@+id/ivCloseLogin" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cross_small" android:layout_alignBottom="@+id/ivIAALogo" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="56dp">
+                        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@color/bdt_gray_darkest" android:id="@+id/tvLabelSignIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_sign_in" android:fontFamily="sans-serif-condensed"/>
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darkest" android:id="@+id/tvRegisterNow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_create_an_account" android:layout_alignBaseline="@+id/tvLabelSignIn" android:layout_alignParentRight="true" android:fontFamily="sans-serif"/>
+                    </RelativeLayout>
+                    <TextView android:background="@color/bdt_red" android:layout_width="50dp" android:layout_height="5dp" android:layout_marginTop="24dp" android:layout_marginBottom="10dp"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/relativelayout" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:id="@+id/rlLoginContainer" android:background="@drawable/round_rect_grey" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                                <ImageView android:id="@+id/ivClear" android:background="@drawable/ic_login_clear" android:padding="4dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:layout_alignBaseline="@+id/txt_input_layout_username" android:layout_alignBottom="@+id/txt_input_layout_username" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                                <com.google.android.material.textfield.TextInputLayout android:id="@+id/txt_input_layout_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/ivClear">
+                                    <EditText android:id="@+id/etUserName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_username" android:maxLength="@integer/max_length_username" android:layout_weight="1" android:inputType="none|text|textNoSuggestions|textEmailAddress" android:imeOptions="actionNext"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout android:id="@+id/txt_input_layout_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/txt_input_layout_username">
+                                    <EditText android:id="@+id/etPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_password" android:inputType="textPassword" android:imeOptions="actionGo"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </RelativeLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/login_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/rlLoginContainer">
+                                <TextView android:enabled="false" android:textSize="16sp" android:textStyle="normal" android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/tvLogin" android:background="@color/bdt_red" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_sign_in" android:fontFamily="sans-serif"/>
+                            </LinearLayout>
+                            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darkest" android:gravity="center" android:id="@+id/tvForgotPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:text="@string/forgot_password" android:layout_below="@+id/login_layout" android:fontFamily="sans-serif"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/pbLogin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

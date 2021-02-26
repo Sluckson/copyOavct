@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@android:id/text1" android:text="this  is label" android:layout_weight="@integer/product_dtl_table_layout_weight" style="@style/NewTableRow.Label"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text="" style="@style/TableRow.Value"/>
+    <TextView android:textColor="@color/iaa_txt_black" android:id="@android:id/text2" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="This is test" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rlNavigation" android:background="@color/bdt_white" android:padding="8dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ivGridView" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_grid" android:layout_marginEnd="12dp"/>
+        <ImageView android:id="@+id/ivListView" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_limage_library" android:layout_toEndOf="@+id/ivGridView"/>
+        <ImageView android:id="@+id/ivBack" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_cancel_red" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/llVehicleImages" android:background="@color/bdt_white" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rlNavigation">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/enlarge_image_view" android:background="@color/iaa_black" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.iaai.android.old.utils.p016ui.touchgallery.GalleryViewPager android:id="@+id/viewFullImage" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <com.iaai.android.old.utils.p016ui.CirclePageIndicator android:id="@+id/pageIndicator" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvVehicleImages" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</RelativeLayout>

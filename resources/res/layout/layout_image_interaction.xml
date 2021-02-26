@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/iaa_black" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/back_navigation" android:background="@color/vehicle_enlarge_img_color" android:padding="8dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/round_rect_bg" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_gridview" android:background="@color/vehicle_enlarge_img_color" android:paddingLeft="20dp" android:paddingTop="4dp" android:paddingRight="20dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_img_gridview_black"/>
+            <ImageView android:id="@+id/img_listview" android:background="@color/iaa_link_blue" android:paddingLeft="20dp" android:paddingTop="4dp" android:paddingRight="20dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_img_listview_gray" android:layout_toRightOf="@+id/img_gridview"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/back_arrow" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_gray" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/image_listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/back_navigation"/>
+</RelativeLayout>

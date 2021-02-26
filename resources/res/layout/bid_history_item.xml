@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/iaa_white" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#3c3c3c" android:id="@+id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amount"/>
+        <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#3c3c3c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ("/>
+        <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#3c3c3c" android:id="@+id/txt_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_you"/>
+        <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="#3c3c3c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=") "/>
+    </LinearLayout>
+    <TextView android:textColor="@color/iaa_prebid_txt" android:id="@+id/txt_date" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">webclient.iaa6.auctionsolutions.com
+        </domain>
+        <domain includeSubdomains="true">webclient.iaa4.auctionsolutions.com
+        </domain>
+        <domain includeSubdomains="true">webclient.iaa3.auctionsolutions.com
+        </domain>
+        <domain includeSubdomains="true">webclient.iaa2.auctionsolutions.com
+        </domain>
+        <domain includeSubdomains="true">pics.iaa3.auctionsolutions.com
+        </domain>
+        <domain includeSubdomains="true">pics.iaa4.auctionsolutions.com
+        </domain>
+        <domain includeSubdomains="true">pics.iaa6.auctionsolutions.com
+        </domain>
+        <domain includeSubdomains="true">pics.iaa2.auctionsolutions.com
+        </domain>
+        <domain includeSubdomains="true">qamapp.iaai.com
+        </domain>
+        <domain includeSubdomains="true">buyerregistration.iaai.com
+        </domain>
+    </domain-config>
+</network-security-config>

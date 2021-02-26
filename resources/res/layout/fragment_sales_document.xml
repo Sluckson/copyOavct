@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_sales_document_0" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <View android:id="@+id/vw_separtor_toolbar" android:background="@color/bdt_gray_light" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="3dp"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/llCheckOutLayout" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_top_arrow" android:layout_above="@+id/llCheckOutLayout" app:backgroundTint="@color/bdt_red"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSalDocList" android:visibility="visible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pbLoadingAuctionSaleList" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+        <TextView android:textSize="18sp" android:gravity="center" android:id="@+id/tvEmptyMessage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/lbl_no_current_vehicles"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/llCheckOutLayout" android:background="@color/bdt_white" android:paddingTop="15dp" android:paddingBottom="19dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="11dp" android:paddingEnd="11dp">
+        <Button android:textSize="16sp" android:textColor="@color/bdt_white" android:id="@+id/btnCheckOut" android:background="@color/bdt_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/lbl_change_delivery_method" android:alpha="0.5" android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layout_total_pending" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textSize="14sp" android:id="@+id/label_total_pending" android:background="@color/md_presale_list_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/award_pending_total_bid_amount" android:layout_alignBaseline="@+id/total_bid_amount"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/black" android:id="@+id/total_bid_amount" android:background="@color/md_presale_list_bg" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/label_total_pending"/>
+        </RelativeLayout>
+        <TextView android:textColor="#1d67b2" android:gravity="right" android:id="@+id/search_results_filter" android:background="@color/md_presale_list_bg" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="asdadasdsadasdas" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="@color/iaa_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

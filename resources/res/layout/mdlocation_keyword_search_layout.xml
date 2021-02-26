@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/iaa_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/iaa_black" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/btn_near_me_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_target" android:layout_alignParentRight="true"/>
+        <ImageView android:id="@+id/search_button" android:paddingLeft="8dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search_blue" android:layout_toLeftOf="@+id/btn_near_me_location" android:layout_alignTop="@+id/btn_near_me_location" android:layout_alignBottom="@+id/btn_near_me_location"/>
+        <EditText android:ellipsize="end" android:id="@+id/keyword_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/auction_keyword_hint_text" android:singleLine="true" android:digits="abcdefghijklmnopqrstuvwxyz1234567890-&apos; ABCDEFGHIJKLMNOPQRSTUVWXYZ" android:layout_toLeftOf="@+id/search_button" android:layout_alignParentLeft="true" android:imeOptions="actionDone"/>
+        <Switch android:id="@+id/switch_public_can_buy" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="ON" android:textOff="OFF" android:text="@string/public_can_buy" android:layout_below="@+id/keyword_search" android:switchPadding="8dp"/>
+        <TextView android:enabled="false" android:textSize="14sp" android:textColor="@drawable/textview_color" android:id="@+id/clear_filters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_filters" android:layout_below="@+id/keyword_search" android:layout_alignBaseline="@+id/switch_public_can_buy" android:layout_alignParentRight="true" android:textAllCaps="true"/>
+    </RelativeLayout>
+    <View android:background="@color/iaa_black" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

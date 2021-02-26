@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinator_layout_parent" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            <RelativeLayout android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+                <ImageButton android:id="@+id/img_back_tooltip" android:background="@null" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cross" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center_vertical" android:id="@+id/toolbar_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_managing_offers" android:layout_toRightOf="@+id/img_back" android:layout_centerVertical="true" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif" android:layout_marginStart="45dp"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View android:background="@color/bdt_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+        <include layout="@layout/layout_tool_tip_content"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

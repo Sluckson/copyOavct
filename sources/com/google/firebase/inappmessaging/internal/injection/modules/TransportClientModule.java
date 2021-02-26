@@ -1,0 +1,27 @@
+package com.google.firebase.inappmessaging.internal.injection.modules;
+
+import com.google.android.datatransport.TransportFactory;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.analytics.connector.AnalyticsConnector;
+import com.google.firebase.inappmessaging.internal.DeveloperListenerManager;
+import com.google.firebase.inappmessaging.internal.MetricsLoggerClient;
+import com.google.firebase.inappmessaging.internal.injection.scopes.FirebaseAppScope;
+import com.google.firebase.inappmessaging.internal.time.Clock;
+import com.google.firebase.installations.FirebaseInstallationsApi;
+import dagger.Module;
+import dagger.Provides;
+
+@Module
+public class TransportClientModule {
+    private static final String TRANSPORT_NAME = "FIREBASE_INAPPMESSAGING";
+
+    static /* synthetic */ byte[] lambda$providesMetricsLoggerClient$0(byte[] bArr) {
+        return bArr;
+    }
+
+    @FirebaseAppScope
+    @Provides
+    static MetricsLoggerClient providesMetricsLoggerClient(FirebaseApp firebaseApp, TransportFactory transportFactory, AnalyticsConnector analyticsConnector, FirebaseInstallationsApi firebaseInstallationsApi, Clock clock, DeveloperListenerManager developerListenerManager) {
+        return new MetricsLoggerClient(TransportClientModule$$Lambda$2.lambdaFactory$(transportFactory.getTransport(TRANSPORT_NAME, byte[].class, TransportClientModule$$Lambda$1.lambdaFactory$())), analyticsConnector, firebaseApp, firebaseInstallationsApi, clock, developerListenerManager);
+    }
+}

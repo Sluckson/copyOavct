@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/iaa_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/DashboardSection">
+            <TableLayout style="@style/DashboardTable">
+                <TableRow>
+                    <TextView android:id="@+id/txt_pre_sale_header" android:text="@string/lbl_PRESALE" android:layout_weight="1" style="@style/DashboardRow.Header"/>
+                    <ImageButton android:id="@+id/btn_overflow" android:src="@drawable/ic_action_overflow_dark" style="@style/ButtonRight"/>
+                </TableRow>
+            </TableLayout>
+            <TableLayout style="@style/DashboardTable">
+                <TableRow style="@style/DashboardRow.Top1">
+                    <ImageButton android:id="@+id/arrowLeft" android:src="@drawable/arrow_left" android:contentDescription="arrowLeft" style="@style/ButtonLeft"/>
+                    <TextView android:id="@+id/txt_selectedPeriod" style="@style/todayTomarowAllControl"/>
+                    <ImageButton android:id="@+id/arrowRight" android:src="@drawable/arrow_right" android:contentDescription="arrowRight" style="@style/ButtonRight"/>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:background="@color/dash_bg" style="@style/DashboardTable">
+                <TableRow android:id="@+id/row_watching_only" style="@style/DashboardRow.Middle">
+                    <TextView android:text="@string/lbl_watching" style="@style/DashboardRow.Label"/>
+                    <TextView android:id="@+id/txt_watching_only" style="@style/DashboardRow.Value.Clickable"/>
+                </TableRow>
+                <TableRow android:id="@+id/row_out_pre_bids" style="@style/DashboardRow.Bottom">
+                    <TextView android:text="@string/lbl_out_bid" style="@style/DashboardRow.Label"/>
+                    <TextView android:id="@+id/txt_out_pre_bids" style="@style/DashboardRow.Value.Clickable"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/DashboardSection">
+            <TableLayout style="@style/DashboardTable">
+                <TableRow>
+                    <TextView android:id="@+id/txt_current_max" android:text="@string/title_POST_SALE" style="@style/DashboardRow.Header"/>
+                </TableRow>
+                <TableRow android:id="@+id/row_award_pending" style="@style/DashboardRow.Top">
+                    <TextView android:text="@string/lbl_award_pending" style="@style/DashboardRow.Label"/>
+                    <TextView android:id="@+id/txt_award_pending" style="@style/DashboardRow.Value.Clickable"/>
+                </TableRow>
+                <TableRow android:id="@+id/row_to_be_paid" style="@style/DashboardRow.Middle">
+                    <TextView android:text="@string/lbl_tobe_paid" style="@style/DashboardRow.Label"/>
+                    <TextView android:id="@+id/txt_to_be_paid" style="@style/DashboardRow.Value.Clickable"/>
+                </TableRow>
+                <TableRow android:id="@+id/row_pick_up" style="@style/DashboardRow.Middle">
+                    <TextView android:text="@string/lbl_pick_up" style="@style/DashboardRow.Label"/>
+                    <TextView android:id="@+id/txt_pick_up" style="@style/DashboardRow.Value.Clickable"/>
+                </TableRow>
+                <TableRow android:id="@+id/row_won_history" style="@style/DashboardRow.Middle">
+                    <TextView android:id="@+id/lbl_won_History" android:text="@string/lbl_Won_History" style="@style/DashboardRow.Label"/>
+                    <TextView android:id="@+id/txt_won" style="@style/DashboardRow.Value.Clickable"/>
+                </TableRow>
+                <TableRow android:id="@+id/row_lost_prebid" style="@style/DashboardRow.Bottom">
+                    <TextView android:id="@+id/lbl_lost_prebid" android:text="@string/lbl_lost_Prebids" style="@style/DashboardRow.Label"/>
+                    <TextView android:id="@+id/txt_lost_prebid" style="@style/DashboardRow.Value.Clickable"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/DashboardSection">
+            <TableLayout style="@style/DashboardTable">
+                <TableRow>
+                    <TextView android:text="@string/lbl_Alerts" style="@style/DashboardRow.Header"/>
+                </TableRow>
+                <TableRow android:id="@+id/row_alerts" style="@style/DashboardRow.Single">
+                    <TextView android:text="@string/lbl_Alerts_Lower" style="@style/DashboardRow.Label"/>
+                    <TextView android:id="@+id/txt_alerts" style="@style/DashboardRow.Value.Clickable"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/section_biddingBenchmark" style="@style/DashboardSection">
+            <TableLayout style="@style/DashboardTable">
+                <TableRow>
+                    <TextView android:text="@string/lbl_BiddingBenchmark" style="@style/DashboardRow.Header"/>
+                </TableRow>
+                <TableRow android:id="@+id/row_biddingBenchmark" style="@style/DashboardRow.Single">
+                    <TextView android:id="@+id/txt_bbHeader" android:text="@string/title_bidding_benchmark" style="@style/DashboardRow.Label"/>
+                    <TextView android:id="@+id/txt_bbMonth" style="@style/DashboardRow.Value.Clickable"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/section_owner" android:visibility="gone" style="@style/DashboardSection">
+            <CheckBox android:id="@+id/chk_my_vehicles_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_StocksOnly" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home" android:id="@+id/drawer_menu_dashboard" android:title="@string/lbl_menu_home"/>
+        <item android:icon="@drawable/ic_drawer_vehicles" android:id="@+id/drawer_menu_fast_search" android:title="Search"/>
+        <item android:icon="@drawable/ic_drawer_auction" android:id="@+id/drawer_menu_auction" android:checked="true" android:title="@string/title_auctions"/>
+        <item android:icon="@drawable/ic_drawer_myaccount" android:id="@+id/drawer_menu_myaccount" android:title="@string/lbl_menu_my_vehicles"/>
+        <item android:icon="@drawable/ic_drawer_location" android:id="@+id/drawer_menu_location" android:title="@string/lbl_menu_locations"/>
+        <item android:icon="@drawable/ic_drawer_notification" android:id="@+id/drawer_menu_notifications" android:title="@string/lbl_dashboard_notification"/>
+        <item android:icon="@drawable/ic_drawer_settings" android:id="@+id/drawer_menu_settings" android:title="@string/lbl_menu_settings"/>
+        <item android:icon="@drawable/ic_drawer_feedback" android:id="@+id/drawer_menu_feedback" android:title="@string/lbl_menu_feedback"/>
+        <item android:icon="@drawable/ic_help" android:id="@+id/drawer_menu_help" android:title="@string/lbl_dashboard_help"/>
+        <item android:icon="@drawable/ic_drawer_contactus" android:id="@+id/drawer_menu_contact_us" android:title="@string/lbl_contact_us"/>
+    </group>
+</menu>

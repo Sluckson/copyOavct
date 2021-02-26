@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/onBoardFooter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/onboarding_footer"/>
+    <com.synnapps.carouselview.CarouselView android:id="@+id/cvOnBoarding" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/onBoardFooter" app:autoPlay="false" app:fillColor="@color/bdt_yellow" app:indicatorGravity="51" app:indicatorVisibility="0" app:pageColor="@color/bdt_filter_seprator" app:radius="4dp" app:strokeColor="#00000000" app:strokeWidth="1dp"/>
+</RelativeLayout>

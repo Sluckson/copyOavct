@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/coordinator_layout_parent" android:tag="layout/fragment_filter_0" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <FrameLayout android:orientation="vertical" android:id="@+id/main" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:tag="binding_2" android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+                <RelativeLayout android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+                    <ImageButton android:id="@+id/img_back" android:background="@null" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cross" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#4d4d4d" android:gravity="left" android:id="@+id/toolbar_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_filters" android:layout_centerVertical="true" android:fontFamily="sans-serif-condensed" android:layout_marginStart="36dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvClearFilter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_Filters" android:layout_centerVertical="true" android:fontFamily="sans-serif" android:layout_marginEnd="29dp" android:layout_alignParentEnd="true" android:letterSpacing="-0.02"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <View android:id="@+id/layout_border_line_clearfilter_top" android:background="@color/bdt_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <include layout="@layout/layout_filter_find_vehicle_conatiner"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <ExpandableListView android:id="@+id/expandableListView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60dp" android:groupIndicator="@null" android:childDivider="@android:color/transparent" android:divider="@android:color/darker_gray" android:dividerHeight="0.5dp" android:choiceMode="singleChoice" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <LinearLayout android:gravity="center" android:id="@+id/ll_applyFilter_container" android:background="@drawable/selector_apply_filter_btn" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true" android:foregroundGravity="center" app:layout_constraintBottom_toBottomOf="0">
+                    <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/bdt_white" android:gravity="center_horizontal" android:id="@+id/tv_applyfilter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_results" android:fontFamily="sans-serif" android:letterSpacing="0.02"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <include android:visibility="gone" layout="@layout/empty_recycler_view"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/pbLoadingFilterList" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

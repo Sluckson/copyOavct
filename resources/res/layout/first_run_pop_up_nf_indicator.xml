@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/section_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/row_padding">
+        <TextView android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/txt_bid_live" android:background="@color/bdt_red" android:padding="4dp" android:layout_width="@dimen/status_icon_large_width" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/lbl_bdt_bid_live" android:drawableLeft="@drawable/ic_star_auction_now" android:layout_marginStart="5dp" style="@style/Text.Small"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/iaa_black" android:id="@+id/nf_indication_text" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_bdt_nf_pop_up_text" android:layout_toRightOf="@+id/section_status"/>
+    <TextView android:textSize="14sp" android:textColor="@color/bdt_red" android:id="@+id/txt_ok" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_close" android:layout_below="@+id/nf_indication_text" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/section_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/row_padding" android:layout_alignParentLeft="true">
+        <FrameLayout android:id="@+id/frameLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textColor="@color/iaa_white" android:gravity="center" android:id="@+id/txt_bid_live" android:background="@drawable/bid_live_btn_selector" android:padding="4dp" android:visibility="visible" android:layout_width="@dimen/status_icon_large_width" android:layout_marginLeft="5dp" android:layout_marginTop="7dp" android:text="Bid Live" style="@style/Text.Small"/>
+            <ImageView android:id="@+id/nf_indicator" android:visibility="visible" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icon_star"/>
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/iaa_black" android:id="@+id/nf_indication_text" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nf_pop_msg" android:layout_toRightOf="@+id/section_status"/>
+    <TextView android:textSize="14sp" android:textColor="@color/iaa_link_blue" android:id="@+id/txt_ok" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_close" android:layout_below="@+id/nf_indication_text" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

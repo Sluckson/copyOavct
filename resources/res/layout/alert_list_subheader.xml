@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:id="@+id/btn_select_deselect_all" android:text="@string/lbl_menu_mark" android:layout_alignParentLeft="true" style="@style/Button.Normal.Small"/>
+    <Button android:id="@+id/btn_delete" android:text="@string/lbl_menu_delete" android:layout_alignParentRight="true" style="@style/Button.Normal.Small"/>
+</RelativeLayout>

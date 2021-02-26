@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/branch_info" style="@style/ResultItem">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_public" android:visibility="gone" android:src="@drawable/ic_public_auction" android:layout_alignParentRight="true" style="@style/Image.AuctionDetailStatus"/>
+        <TextView android:id="@+id/branch_name" android:layout_width="match_parent" android:layout_toLeftOf="@+id/image_public" android:layout_alignParentLeft="true" style="@style/Text.Row.Title"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/branch_address" android:paddingBottom="@dimen/row_padding" style="@style/Text.Row.Detail"/>
+    <RelativeLayout android:paddingBottom="@dimen/row_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_phone" android:src="@drawable/ic_phone" style="@style/Image.PhoneIcon"/>
+        <TextView android:id="@+id/branch_phone" android:paddingLeft="@dimen/row_padding" android:layout_toRightOf="@+id/image_phone" style="@style/Text.Row.Detail"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/branch_email" android:layout_toRightOf="@+id/image_fax" style="@style/Text.Row.Detail"/>
+</LinearLayout>

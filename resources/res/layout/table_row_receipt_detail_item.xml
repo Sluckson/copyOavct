@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/container_padding" android:paddingTop="@dimen/row_padding" android:paddingRight="@dimen/container_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/pdf_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pdf_icon_android"/>
+        <TextView android:colorBackground="#f9f9f9" android:textColor="@color/iaa_black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@android:id/text1" android:paddingLeft="@dimen/container_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="false" android:layout_weight="1"/>
+        <TextView android:colorBackground="#f9f9f9" android:textColor="@color/iaa_report_txt_blue" android:gravity="right|center_vertical|center_horizontal|center" android:id="@android:id/text2" android:paddingLeft="@dimen/container_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="false" android:drawableRight="@drawable/arrow_next" android:drawablePadding="5dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:id="@+id/report_sep" android:background="@color/lighter_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/row_padding"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/iaa_red_even_darker" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iaa_drawer_logo" android:layout_width="240dp" android:layout_height="160dp" android:src="@drawable/drawer_header_logo" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/user_picture" android:paddingTop="40dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:src="@drawable/ic_drawer_user_image" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/iaa_white" android:id="@+id/user_name" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="Guest User" android:layout_below="@+id/user_picture"/>
+            <TextView android:textSize="14sp" android:textColor="@color/iaa_white" android:id="@+id/buyer_id" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="" android:layout_below="@+id/user_name" android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/drawer_menu_navigation_button" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drawer_down_arrow" android:contentDescription="drawer_arrow"/>
+    </FrameLayout>
+</RelativeLayout>

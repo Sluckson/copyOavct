@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/nav_drawer" android:tag="layout/activity_bdt_auction_main_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/frameLayout" android:background="@color/md_presale_list_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/auction_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+        <View android:id="@+id/layout_border_line_date" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp" android:layout_below="@+id/toolbar" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <fragment android:name="androidx.navigation.fragment.NavHostFragment" android:id="@+id/bdt_auction_main_nav_host_fragment" android:layout_width="match_parent" android:layout_height="match_parent" app:defaultNavHost="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <FrameLayout android:id="@+id/fragment_content" android:layout_width="0dp" android:layout_height="0dp" android:elevation="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@+id/nav_view" android:layout_width="wrap_content" android:layout_height="match_parent" app:headerLayout="@layout/drawer_header_layout" app:itemIconTint="@color/navigation_item_selector" app:itemTextColor="@color/navigation_item_selector" app:menu="@menu/mvvm_drawer"/>
+</androidx.drawerlayout.widget.DrawerLayout>

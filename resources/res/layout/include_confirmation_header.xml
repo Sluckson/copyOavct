@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/proceednext_bgshadow" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_payment_submitted"/>
+        <TextView android:textSize="12sp" android:textColor="@color/iaa_txt_gray" android:gravity="top" android:id="@+id/txt_submitted_date" android:layout_width="0dp" android:layout_height="wrap_content" android:text="On Sep 2, 2014" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/iaa_txt_green" android:gravity="center_horizontal" android:id="@+id/txt_final_amount" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="$4,493.98"/>
+    <TextView android:textSize="14sp" android:gravity="center_horizontal" android:id="@+id/txt_failure_count" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reduce from %$1s because of 1 issue"/>
+    <RelativeLayout android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/payment_method_logo" android:padding="10dp" android:layout_width="80dp" android:layout_height="wrap_content" android:src="@drawable/ipay_logo" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_item_count" android:paddingLeft="10dp" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/payment_method_logo" android:layout_alignParentTop="true">
+            <TextView android:textSize="14sp" android:textColor="@color/iaa_txt_gray" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/lbl_items_countnum" android:layout_weight="1"/>
+            <TextView android:textStyle="bold" android:id="@+id/txt_success_count" android:layout_width="0dp" android:layout_height="wrap_content" android:text="3" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_payment_method" android:paddingLeft="10dp" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/payment_method_logo" android:layout_below="@+id/ll_item_count">
+            <TextView android:textSize="14sp" android:textColor="@color/iaa_txt_gray" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/lbl_payment_method" android:layout_weight="1"/>
+            <TextView android:textStyle="bold" android:id="@+id/txt_payment_method" android:layout_width="0dp" android:layout_height="wrap_content" android:text="AFC" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_payment_term" android:paddingLeft="10dp" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/payment_method_logo" android:layout_below="@+id/ll_payment_method">
+            <TextView android:textColor="@color/iaa_txt_gray" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/lbl_payment_term" android:layout_weight="1"/>
+            <TextView android:textStyle="bold" android:id="@+id/txt_payment_term" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/afc_question_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/gray_light" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/iaa_txt_gray" android:gravity="center_horizontal" android:autoLink="all" android:id="@+id/afc_questions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</LinearLayout>

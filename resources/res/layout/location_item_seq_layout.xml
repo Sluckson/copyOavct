@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/md_separator" android:background="@color/iaa_location_mdBorder" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/md_txt_vehicle_pickup_info"/>
+        <TextView android:id="@+id/start_item_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="1"/>
+        <TextView android:id="@+id/divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " android:layout_toRightOf="@+id/start_item_number"/>
+        <TextView android:id="@+id/end_item_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999" android:layout_toRightOf="@+id/divider"/>
+        <TextView android:id="@+id/sale_order_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="160dp" android:text="Motercycle Motercycle"/>
+    </RelativeLayout>
+</LinearLayout>

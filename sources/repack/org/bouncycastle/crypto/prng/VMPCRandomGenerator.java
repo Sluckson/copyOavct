@@ -1,0 +1,323 @@
+package repack.org.bouncycastle.crypto.prng;
+
+import com.google.common.base.Ascii;
+import com.google.common.primitives.SignedBytes;
+import com.lowagie.text.DocWriter;
+import com.lowagie.text.pdf.ByteBuffer;
+import com.wowza.gocoder.sdk.support.wmstransport.wms.amf.AMFData;
+import repack.org.bouncycastle.crypto.signers.PSSSigner;
+
+public class VMPCRandomGenerator implements RandomGenerator {
+
+    /* renamed from: P */
+    private byte[] f6212P;
+
+    /* renamed from: n */
+    private byte f6213n = 0;
+
+    /* renamed from: s */
+    private byte f6214s;
+
+    public VMPCRandomGenerator() {
+        byte[] bArr = new byte[256];
+        bArr[0] = -69;
+        bArr[1] = 44;
+        bArr[2] = 98;
+        bArr[3] = Byte.MAX_VALUE;
+        bArr[4] = -75;
+        bArr[5] = -86;
+        bArr[6] = -44;
+        bArr[7] = 13;
+        bArr[8] = -127;
+        bArr[9] = -2;
+        bArr[10] = -78;
+        bArr[11] = -126;
+        bArr[12] = -53;
+        bArr[13] = -96;
+        bArr[14] = -95;
+        bArr[15] = 8;
+        bArr[16] = Ascii.CAN;
+        bArr[17] = 113;
+        bArr[18] = 86;
+        bArr[19] = -24;
+        bArr[20] = 73;
+        bArr[21] = 2;
+        bArr[22] = 16;
+        bArr[23] = -60;
+        bArr[24] = -34;
+        bArr[25] = 53;
+        bArr[26] = -91;
+        bArr[27] = -20;
+        bArr[28] = Byte.MIN_VALUE;
+        bArr[29] = 18;
+        bArr[30] = -72;
+        bArr[31] = 105;
+        bArr[32] = -38;
+        bArr[33] = DocWriter.FORWARD;
+        bArr[34] = 117;
+        bArr[35] = -52;
+        bArr[36] = -94;
+        bArr[37] = 9;
+        bArr[38] = 54;
+        bArr[39] = 3;
+        bArr[40] = 97;
+        bArr[41] = 45;
+        bArr[42] = -3;
+        bArr[43] = -32;
+        bArr[44] = -35;
+        bArr[45] = 5;
+        bArr[46] = 67;
+        bArr[47] = -112;
+        bArr[48] = -83;
+        bArr[49] = -56;
+        bArr[50] = -31;
+        bArr[51] = -81;
+        bArr[52] = 87;
+        bArr[53] = -101;
+        bArr[54] = 76;
+        bArr[55] = -40;
+        bArr[56] = 81;
+        bArr[57] = -82;
+        bArr[58] = 80;
+        bArr[59] = -123;
+        bArr[60] = DocWriter.f570LT;
+        bArr[61] = 10;
+        bArr[62] = -28;
+        bArr[63] = -13;
+        bArr[64] = -100;
+        bArr[65] = 38;
+        bArr[66] = 35;
+        bArr[67] = 83;
+        bArr[68] = -55;
+        bArr[69] = -125;
+        bArr[70] = -105;
+        bArr[71] = 70;
+        bArr[72] = -79;
+        bArr[73] = -103;
+        bArr[74] = 100;
+        bArr[75] = 49;
+        bArr[76] = 119;
+        bArr[77] = -43;
+        bArr[78] = Ascii.f267GS;
+        bArr[79] = -42;
+        bArr[80] = 120;
+        bArr[81] = -67;
+        bArr[82] = 94;
+        bArr[83] = -80;
+        bArr[84] = -118;
+        bArr[85] = 34;
+        bArr[86] = 56;
+        bArr[87] = -8;
+        bArr[88] = 104;
+        bArr[89] = 43;
+        bArr[90] = 42;
+        bArr[91] = -59;
+        bArr[92] = -45;
+        bArr[93] = -9;
+        bArr[94] = PSSSigner.TRAILER_IMPLICIT;
+        bArr[95] = 111;
+        bArr[96] = -33;
+        bArr[97] = 4;
+        bArr[98] = -27;
+        bArr[99] = -107;
+        bArr[100] = DocWriter.f569GT;
+        bArr[101] = 37;
+        bArr[102] = -122;
+        bArr[103] = -90;
+        bArr[104] = 11;
+        bArr[105] = -113;
+        bArr[106] = -15;
+        bArr[107] = 36;
+        bArr[108] = 14;
+        bArr[109] = -41;
+        bArr[110] = SignedBytes.MAX_POWER_OF_TWO;
+        bArr[111] = -77;
+        bArr[112] = -49;
+        bArr[113] = 126;
+        bArr[114] = 6;
+        bArr[115] = Ascii.NAK;
+        bArr[116] = -102;
+        bArr[117] = 77;
+        bArr[118] = Ascii.f266FS;
+        bArr[119] = -93;
+        bArr[120] = -37;
+        bArr[121] = 50;
+        bArr[122] = -110;
+        bArr[123] = 88;
+        bArr[124] = 17;
+        bArr[125] = 39;
+        bArr[126] = -12;
+        bArr[127] = 89;
+        bArr[128] = -48;
+        bArr[129] = 78;
+        bArr[130] = 106;
+        bArr[131] = Ascii.ETB;
+        bArr[132] = 91;
+        bArr[133] = -84;
+        bArr[134] = -1;
+        bArr[135] = 7;
+        bArr[136] = -64;
+        bArr[137] = 101;
+        bArr[138] = 121;
+        bArr[139] = -4;
+        bArr[140] = -57;
+        bArr[141] = -51;
+        bArr[142] = 118;
+        bArr[143] = 66;
+        bArr[144] = 93;
+        bArr[145] = -25;
+        bArr[146] = 58;
+        bArr[147] = 52;
+        bArr[148] = 122;
+        bArr[149] = ByteBuffer.ZERO;
+        bArr[150] = 40;
+        bArr[151] = 15;
+        bArr[152] = 115;
+        bArr[153] = 1;
+        bArr[154] = -7;
+        bArr[155] = -47;
+        bArr[156] = -46;
+        bArr[157] = Ascii.f264EM;
+        bArr[158] = -23;
+        bArr[159] = -111;
+        bArr[160] = -71;
+        bArr[161] = 90;
+        bArr[162] = -19;
+        bArr[163] = 65;
+        bArr[164] = 109;
+        bArr[165] = -76;
+        bArr[166] = -61;
+        bArr[167] = -98;
+        bArr[168] = -65;
+        bArr[169] = 99;
+        bArr[170] = -6;
+        bArr[171] = Ascii.f275US;
+        bArr[172] = 51;
+        bArr[173] = 96;
+        bArr[174] = 71;
+        bArr[175] = -119;
+        bArr[176] = -16;
+        bArr[177] = -106;
+        bArr[178] = Ascii.SUB;
+        bArr[179] = 95;
+        bArr[180] = -109;
+        bArr[181] = DocWriter.EQUALS;
+        bArr[182] = 55;
+        bArr[183] = 75;
+        bArr[184] = -39;
+        bArr[185] = -88;
+        bArr[186] = -63;
+        bArr[187] = Ascii.ESC;
+        bArr[188] = -10;
+        bArr[189] = 57;
+        bArr[190] = -117;
+        bArr[191] = -73;
+        bArr[192] = 12;
+        bArr[193] = 32;
+        bArr[194] = -50;
+        bArr[195] = -120;
+        bArr[196] = 110;
+        bArr[197] = -74;
+        bArr[198] = 116;
+        bArr[199] = -114;
+        bArr[200] = -115;
+        bArr[201] = 22;
+        bArr[202] = 41;
+        bArr[203] = -14;
+        bArr[204] = -121;
+        bArr[205] = -11;
+        bArr[206] = -21;
+        bArr[207] = 112;
+        bArr[208] = -29;
+        bArr[209] = -5;
+        bArr[210] = 85;
+        bArr[211] = -97;
+        bArr[212] = -58;
+        bArr[213] = 68;
+        bArr[214] = 74;
+        bArr[215] = 69;
+        bArr[216] = 125;
+        bArr[217] = -30;
+        bArr[218] = 107;
+        bArr[219] = 92;
+        bArr[220] = 108;
+        bArr[221] = 102;
+        bArr[222] = -87;
+        bArr[223] = -116;
+        bArr[224] = -18;
+        bArr[225] = -124;
+        bArr[226] = 19;
+        bArr[227] = -89;
+        bArr[228] = Ascii.f271RS;
+        bArr[229] = -99;
+        bArr[230] = -36;
+        bArr[231] = 103;
+        bArr[232] = 72;
+        bArr[233] = -70;
+        bArr[234] = 46;
+        bArr[235] = -26;
+        bArr[236] = -92;
+        bArr[237] = -85;
+        bArr[238] = 124;
+        bArr[239] = -108;
+        bArr[241] = AMFData.DATA_TYPE_BYTEARRAY;
+        bArr[242] = -17;
+        bArr[243] = -22;
+        bArr[244] = -66;
+        bArr[245] = -54;
+        bArr[246] = 114;
+        bArr[247] = 79;
+        bArr[248] = 82;
+        bArr[249] = -104;
+        bArr[250] = 63;
+        bArr[251] = -62;
+        bArr[252] = 20;
+        bArr[253] = 123;
+        bArr[254] = 59;
+        bArr[255] = 84;
+        this.f6212P = bArr;
+        this.f6214s = -66;
+    }
+
+    public void addSeedMaterial(byte[] bArr) {
+        for (byte b : bArr) {
+            byte[] bArr2 = this.f6212P;
+            byte b2 = this.f6214s;
+            byte b3 = this.f6213n;
+            this.f6214s = bArr2[(b2 + bArr2[b3 & 255] + b) & 255];
+            byte b4 = bArr2[b3 & 255];
+            byte b5 = this.f6214s;
+            bArr2[b3 & 255] = bArr2[b5 & 255];
+            bArr2[b5 & 255] = b4;
+            this.f6213n = (byte) ((b3 + 1) & 255);
+        }
+    }
+
+    public void addSeedMaterial(long j) {
+        byte[] bArr = new byte[4];
+        bArr[3] = (byte) ((int) (255 & j));
+        bArr[2] = (byte) ((int) ((65280 & j) >> 8));
+        bArr[1] = (byte) ((int) ((16711680 & j) >> 16));
+        bArr[0] = (byte) ((int) ((j & -16777216) >> 24));
+        addSeedMaterial(bArr);
+    }
+
+    public void nextBytes(byte[] bArr) {
+        nextBytes(bArr, 0, bArr.length);
+    }
+
+    public void nextBytes(byte[] bArr, int i, int i2) {
+        synchronized (this.f6212P) {
+            int i3 = i2 + i;
+            while (i != i3) {
+                this.f6214s = this.f6212P[(this.f6214s + this.f6212P[this.f6213n & 255]) & 255];
+                bArr[i] = this.f6212P[(this.f6212P[this.f6212P[this.f6214s & 255] & 255] + 1) & 255];
+                byte b = this.f6212P[this.f6213n & 255];
+                this.f6212P[this.f6213n & 255] = this.f6212P[this.f6214s & 255];
+                this.f6212P[this.f6214s & 255] = b;
+                this.f6213n = (byte) ((this.f6213n + 1) & 255);
+                i++;
+            }
+        }
+    }
+}

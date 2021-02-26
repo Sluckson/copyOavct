@@ -1,0 +1,27 @@
+  <table class="table table-vehicles">
+                    <tbody>
+                        <tr>
+                            <td width="25" class="img-td">
+								~imgURL~
+                            </td>
+                            <td>
+                                <p>~ymm~</p>
+                                <p>Stock #: ~vehicleStock~</p>
+                            </td>
+                            <td>
+                                <p class="alert-label alert-offsite" style="~offsiteStyle~">
+                                    <svg class="svg-icon-sm">
+                                      <use xlink:href="file:///android_asset/evp/sprite.svg#icon-icon-offsite"></use>
+                                    </svg>
+                                    Offsite
+                                </p>
+                                <p class="alert-label alert-fees" style="~feeStyle~">
+                                    <svg class="svg-icon-sm">
+                                      <use xlink:href="file:///android_asset/evp/sprite.svg#icon-icon-fees"></use>
+                                    </svg>
+                                    Fee(s) Due
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+  </table>

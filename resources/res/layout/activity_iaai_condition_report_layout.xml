@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout" android:tag="layout/activity_iaai_condition_report_layout_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/BDT.Base.MyTheme" android:id="@+id/icToolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            <RelativeLayout android:theme="@style/BDT.Base.MyTheme" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/imgPremiumReport" android:background="@null" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cross_small" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/bdt_black" android:gravity="center" android:id="@+id/tvPRToolbarHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_bdt_iaa_condition_report" android:layout_centerVertical="true" android:fontFamily="sans-serif-condensed"/>
+                <ImageButton android:id="@+id/imgShareIC" android:background="@null" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_share_report" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="30dp"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <WebView android:id="@+id/wvIAR" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/icToolbar"/>
+        <LinearLayout android:id="@+id/llPDFNavigation" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageButton android:id="@+id/btnPDFPreviousPage" android:background="@color/iaa_semi_transparent_black" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_action_previous_item" android:layout_weight="1"/>
+            <ImageButton android:id="@+id/btnPDFNextPage" android:background="@color/iaa_semi_transparent_black" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_action_next_item" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/ic_pbLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+</FrameLayout>

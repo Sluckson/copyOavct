@@ -1,0 +1,31 @@
+package com.lowagie.text;
+
+import com.lowagie.text.pdf.codec.TIFFFaxDecoder;
+import java.net.URL;
+
+public class ImgCCITT extends Image {
+    ImgCCITT(Image image) {
+        super(image);
+    }
+
+    public ImgCCITT(int i, int i2, boolean z, int i3, int i4, byte[] bArr) throws BadElementException {
+        super((URL) null);
+        if (i3 == 256 || i3 == 257 || i3 == 258) {
+            if (z) {
+                TIFFFaxDecoder.reverseBits(bArr);
+            }
+            this.type = 34;
+            this.scaledHeight = (float) i2;
+            setTop(this.scaledHeight);
+            this.scaledWidth = (float) i;
+            setRight(this.scaledWidth);
+            this.colorspace = i4;
+            this.bpc = i3;
+            this.rawData = bArr;
+            this.plainWidth = getWidth();
+            this.plainHeight = getHeight();
+            return;
+        }
+        throw new BadElementException("The CCITT compression type must be CCITTG4, CCITTG3_1D or CCITTG3_2D");
+    }
+}

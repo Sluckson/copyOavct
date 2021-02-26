@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="default_array_refiner_airbag">
+        <item>Sin Restricciones</item>
+    </array>
+    <array name="default_array_refiner_anyday">
+        <item>Cualquier Dia</item>
+    </array>
+    <array name="default_array_refiner_buyertype">
+        <item>Todos los tipos de compradores</item>
+    </array>
+    <array name="default_spinner_data">
+        <item>Cualquiera</item>
+    </array>
+    <array name="find_details_hint_message">
+        <item>Seleccione tantos modelos como desee, hasta un máximo de 10 marcas</item>
+    </array>
+    <array name="find_details_hint_title">
+        <item>Seleccione múltiples marcas / modelos</item>
+    </array>
+    <array name="manage_offers_hint_message">
+        <item>Toque el ícono Ofertas para administrar las negociaciones con los vendedores de vehículos ganados.</item>
+        <item>Easily access your Saved Searches right from the app landing page.</item>
+    </array>
+    <array name="manage_offers_hint_title">
+        <item>Manejar ofertas de vendedores</item>
+        <item>Accessing Saved Searches</item>
+    </array>
+    <array name="payment_method_payPal_hint_message">
+        <item>Ahora puede pagar sus artículos con PayPal. ¡Simplemente vincule su cuenta y estará listo para comenzar!</item>
+    </array>
+    <array name="payment_method_payPal_hint_title">
+        <item>Pague con PayPal</item>
+    </array>
+    <array name="product_detail_engine_video_hint_message">
+        <item>You can see a picture of the vehicle’s key by tapping the key icon.</item>
+        <item>You can now share a stock with other users by tapping the share icon.</item>
+        <item>Puede ver un video con sonido del motor en funcionamiento al tocar el icono de reproducciÛn de video</item>
+    </array>
+    <array name="product_detail_engine_video_hint_title">
+        <item>Ver la llave de un vehículo</item>
+        <item>Compartir existencias con otros usuarioss</item>
+        <item>Video del motor en funcionamiento</item>
+    </array>
+    <array name="product_detail_engine_video_only_hint_message">
+        <item>Puede ver un video con sonido del motor en funcionamiento al tocar el icono de reproducciÛn de video</item>
+    </array>
+    <array name="product_detail_engine_video_only_hint_title">
+        <item>Video del motor en funcionamiento</item>
+    </array>
+    <array name="product_detail_hint_message">
+        <item>Puede ver la imagen de la llave de un vehículo tocando el icono de la llave</item>
+        <item>Ahora puede compartir una acción con otros usuarios tocando el icono de compartir</item>
+    </array>
+    <array name="product_detail_hint_title">
+        <item>Ver la llave de un vehículo</item>
+        <item>Compartir existencias con otros usuarioss</item>
+    </array>
+    <array name="search_sort_item_list">
+        <item>Fecha de la subasta (del más pronto al más tardío)</item>
+        <item>Fecha de la subasta (del más tardío al más pronto)</item>
+        <item>Sucursal (A to Z)</item>
+        <item>Sucursal (Z to A)</item>
+        <item>Año (del más a la menos reciente)</item>
+        <item>Año (del menos al más reciente)</item>
+        <item>Marca (A to Z)</item>
+        <item>Marca (Z to A)</item>
+        <item>Modelo (A to Z)</item>
+        <item>Modelo (Z to A)</item>
+        <item>Series (A to Z)</item>
+        <item>Series (Z to A)</item>
+        <item>Nro. de existencia (del más bajo al más alto)</item>
+        <item>Nro. de existencia (del más alto al más bajo)</item>
+        <item>VIN (del más bajo al más alto)</item>
+        <item>VIN (del más alto al más bajo)</item>
+        <item>Odómetro (del más bajo al más alto)</item>
+        <item>Odómetro (del más alto al más bajo)</item>
+        <item>Carril (A to Z)</item>
+        <item>Carril (Z to A)</item>
+        <item>Run #(del más bajo al más alto)</item>
+        <item>Run #(del más alto al más bajo)</item>
+        <item>Documento de venta (A to Z)</item>
+        <item>Documento de venta (Z to A)</item>
+        <item>Tipo de pérdida (A to Z)</item>
+        <item>Tipo de pérdida (Z to A)</item>
+        <item>Daño primario (A to Z)</item>
+        <item>Daño primario (Z to A)</item>
+    </array>
+    <array name="service_category_array">
+        <item>Seleccione una categoría de servicio</item>
+        <item>Pregunta general</item>
+        <item>Sugerencias para mejorar</item>
+        <item>Información para hacer ofertas en línea</item>
+        <item>Comentario o problema con la aplicación</item>
+        <item>Registro de IAA/Inicio de sesión de usuario</item>
+        <item>Vehículo específico</item>
+    </array>
+    <array name="shortcut_refiners">
+        <item>Comprar ahora</item>
+        <item>Prende y corre</item>
+        <item>Titulo Limpio</item>
+    </array>
+    <array name="sort_item_list">
+        <item>Run # (del más bajo al más alto)</item>
+        <item>Run # (del más alto al más bajo)</item>
+        <item>Carril (A to Z)</item>
+        <item>Carril (Z to A)</item>
+        <item>Marca (A to Z)</item>
+        <item>Marca (Z to A)</item>
+        <item>Odómetro (del más bajo al más alto)</item>
+        <item>Odómetro (del más alto al más bajo)</item>
+        <item>Año (del más a la menos reciente)</item>
+        <item>Año (del menos al más reciente)</item>
+    </array>
+    <array name="to_paid_sort_item_list">
+        <item>Fecha de vencimiento(Más reciente)</item>
+        <item>Fecha de vencimiento(Menos reciente)</item>
+        <item>Sucursal (A - Z)</item>
+        <item>Sucursal (Z - A)</item>
+        <item>Monto de la oferta (Más bajo)</item>
+        <item>Monto de la oferta (Más alto)</item>
+        <item>Fecha ganada (Más reciente)</item>
+        <item>Fecha ganada (Menos reciente)</item>
+    </array>
+    <array name="vehicle_sale_filter_hint_message">
+        <item>Pulsa Siguiente para ver las novedades.</item>
+        <item>Los filtros se agrupan ahora en filtros de Vehículo y de Venta para mayor control y comodidad.</item>
+        <item>La mayoría de los filtros se actualizan con la posibilidad de marcar varias casillas, así que no te contengas.</item>
+        <item>El filtro de Nuevo Inventario te ayuda a localizar nuestras últimas adiciones.</item>
+        <item>El nuevo filtro de la Serie está disponible después de seleccionar una marca y un modelo.</item>
+        <item>Ahora puedes filtrar para ver las existencias ubicadas en nuestros mercados internacionales.</item>
+        <item>Guarde tus búsquedas favoritas y sincronízalas en tu aplicación móvil y en IAAI.com.</item>
+        <item>Accede fácilmente a tus búsquedas guardadas desde la página de inicio de la aplicación.</item>
+        <item>Pulsa el botón Díganos en la sección Mi cuenta.</item>
+    </array>
+    <array name="vehicle_sale_filter_hint_title">
+        <item>Recorre las nuevas funciones de búsqueda</item>
+        <item>¡Asegúrese de ver todos los filtros!</item>
+        <item>Seleccione múltiples filtros</item>
+        <item>Filtrar por Nuevo Inventario</item>
+        <item>Filtro por serie/línea</item>
+        <item>Filtros de mercados internacionales</item>
+        <item>Guardar una búsqueda</item>
+        <item>Nueva función: Búsquedas guardadas</item>
+        <item>Por favor comparte tus comentarios</item>
+    </array>
+    <array name="zip_miles_refiner">
+        <item>Todo el país</item>
+        <item>50 millas</item>
+        <item>100 millas</item>
+        <item>200 millas</item>
+        <item>300 millas</item>
+        <item>500 millas</item>
+        <item>800 millas</item>
+    </array>
+</resources>

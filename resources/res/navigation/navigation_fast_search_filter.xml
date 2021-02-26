@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/credit_card_navigation_graph" app:startDestination="@+id/FastSearchFilterFragment">
+    <fragment android:label="FastSearchFilterFragment" android:name="com.iaai.android.bdt.feature.fastSearchFilter.newFindVehicle.FastSearchFilterFragment" android:id="@+id/FastSearchFilterFragment"/>
+</navigation>

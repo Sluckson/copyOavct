@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/iaa_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/branch_separator_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/separator_1" android:background="@color/iaa_bg_dark_gray" android:layout_width="match_parent" android:layout_height="2dp"/>
+        <View android:id="@+id/separator_2" android:background="@color/iaa_bg_gray" android:layout_width="match_parent" android:layout_height="20dp" android:layout_below="@+id/separator_1"/>
+        <View android:background="@color/iaa_bg_dark_gray" android:layout_width="match_parent" android:layout_height="2dp" android:layout_below="@+id/separator_2"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="10dp">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/vpr_red_title" android:id="@+id/pullout_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_pullout_confirm" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/iaa_black" android:id="@+id/save_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Joe&apos;s Towing" android:layout_below="@+id/pullout_title" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <View android:background="@color/vpr_seprator_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_branch"/>
+        <TextView android:textSize="16sp" android:textColor="@color/iaa_black" android:id="@+id/branch_name" android:paddingLeft="5dp" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Los Angles(CA)" android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/thi_layout" android:paddingLeft="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/vpr_title_dtl_color" android:id="@+id/thi_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vpr_label_title_handling_instruction"/>
+        <TextView android:textSize="14sp" android:textColor="@color/vpr_text_notes" android:id="@+id/title_handling_instruction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lorem ipsum delas itasca lorem ipsum." android:layout_below="@+id/thi_title"/>
+    </RelativeLayout>
+    <View android:background="@color/vpr_seprator_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:background="@color/vpr_pick_instruction_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/pickup_instruction_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_instructions"/>
+            <TextView android:textSize="16sp" android:textColor="@color/iaa_black" android:id="@+id/pickup_instruction" android:paddingLeft="5dp" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_pickup_instruction" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/vpr_1_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_below="@+id/pickup_instruction_layout">
+            <ImageView android:id="@+id/vpr_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vpr_1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/vpr_text_notes" android:id="@+id/load_title_1" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vpr_load_oprator" android:layout_toRightOf="@+id/vpr_1" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/buyer_layout" android:paddingLeft="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/vpr_1_layout">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/iaa_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tobe_picked_up_buyer"/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/iaa_black" android:id="@+id/buyer_name" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25234190"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/title_layout" android:paddingLeft="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/buyer_layout">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/iaa_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to_be_picked_up_title_vpr"/>
+            <TextView android:textSize="14sp" android:textColor="@color/iaa_black" android:id="@+id/title_vpr" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Joe&apos;s Towing"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/vpr_2_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_below="@+id/title_layout">
+            <ImageView android:id="@+id/vpr_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vpr_2"/>
+            <TextView android:textSize="14sp" android:textColor="@color/vpr_text_notes" android:id="@+id/load_title_2" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vpr_provide_pin" android:layout_toRightOf="@+id/vpr_2" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/vpr_2_layout">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/iaa_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vpr_vin_title"/>
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/iaa_black" android:id="@+id/bold_pin" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1456"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/vpr_seprator_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:paddingLeft="10dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_vehicles"/>
+            <TextView android:textSize="16sp" android:textColor="@color/iaa_black" android:paddingLeft="5dp" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_pullout_seprator_text" android:layout_alignParentLeft="true" android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/vpr_text_notes" android:id="@+id/pullout_vehicle_count" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_vehicles" android:layout_alignParentRight="true" android:fontFamily="sans-serif-medium"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/vpr_title_dtl_color" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/review_pullout_message" android:layout_toRightOf="@+id/vpr_2" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/vpr_text_notes" android:id="@+id/note_text" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Lorem ipsum delas itasca lorem ipsum." android:layout_toRightOf="@+id/vpr_2" android:layout_centerVertical="true"/>
+    <View android:background="@color/vpr_seprator_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

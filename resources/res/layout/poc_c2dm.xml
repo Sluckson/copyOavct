@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Registration ID"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_us_email" android:layout_alignParentRight="true"/>
+        <EditText android:id="@+id/txt_reg_id" android:layout_width="match_parent" android:layout_height="50dp" android:singleLine="true" android:layout_toLeftOf="@+id/btn_email" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Server Recycle Time"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/txt_server_recycle_hour" android:layout_width="100dp" android:layout_height="50dp" android:singleLine="true" android:maxLength="2" android:inputType="phone"/>
+        <EditText android:id="@+id/txt_server_recycle_minute" android:layout_width="100dp" android:layout_height="50dp" android:singleLine="true" android:maxLength="2" android:inputType="phone"/>
+        <Button android:id="@+id/btn_apply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apply" android:layout_alignParentRight="true"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Notification"/>
+    <EditText android:id="@+id/txt_header" android:layout_width="match_parent" android:layout_height="50dp" android:hint="Header" android:singleLine="true"/>
+    <EditText android:id="@+id/txt_message" android:layout_width="match_parent" android:layout_height="50dp" android:hint="Message" android:singleLine="true"/>
+    <Button android:id="@+id/btn_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send" android:layout_alignParentRight="true"/>
+</LinearLayout>

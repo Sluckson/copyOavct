@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/header_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+        <TextView android:textColor="@color/bdt_black" android:id="@+id/header_title" android:paddingRight="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ghfghfghfghfgfghhjhgjhgjghf" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="4dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageButton android:gravity="center_vertical" android:id="@+id/download_button" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="8dp" android:src="@drawable/ic_bdt_share"/>
+            <ImageButton android:gravity="center_vertical" android:id="@+id/finish_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_cancel_red" android:layout_alignParentRight="true"/>
+        </LinearLayout>
+        <include layout="@layout/tab_header_border"/>
+    </RelativeLayout>
+    <WebView android:id="@+id/afc_terms" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/header_layout"/>
+    <ImageButton android:id="@+id/close_button" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ic_tab_largetiles" android:layout_alignParentRight="true"/>
+    <LinearLayout android:id="@+id/ll_navigation" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/btn_previous" android:background="@color/iaa_semi_transparent_black" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_action_previous_item" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/btn_next" android:background="@color/iaa_semi_transparent_black" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_action_next_item" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

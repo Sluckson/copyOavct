@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relative_layout" android:background="@color/iaa_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:textColor="@color/iaa_black" android:id="@+id/lbl_zip_code" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/proximity_to_zip_code"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/searchview_layout" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/lbl_zip_code">
+            <EditText android:ellipsize="end" android:id="@+id/keyword_search" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/fast_search_sort_keyword_hint_text" android:singleLine="true" android:maxLength="5" android:layout_weight="3" android:inputType="number" android:imeOptions="actionDone"/>
+            <ImageView android:id="@+id/search_button" android:paddingTop="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/check_for_sorting"/>
+        </LinearLayout>
+        <View android:id="@+id/refiner_separator1" android:background="@color/iaa_black" android:layout_width="match_parent" android:layout_height="2px" android:layout_below="@+id/searchview_layout"/>
+        <TextView android:textStyle="bold" android:textColor="@color/iaa_black" android:id="@+id/lbl_sort_by" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by" android:layout_below="@+id/refiner_separator1"/>
+    </RelativeLayout>
+</LinearLayout>

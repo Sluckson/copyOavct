@@ -1,0 +1,31 @@
+package com.iaai.android.bdt.utils;
+
+import kotlin.Metadata;
+
+@Metadata(mo66931bv = {1, 0, 3}, mo66932d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0002\b\u0011\b\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013¨\u0006\u0014"}, mo66933d2 = {"Lcom/iaai/android/bdt/utils/ActivityRequestCode;", "", "value", "", "(Ljava/lang/String;II)V", "getValue", "()I", "FROM_LOGIN_TO_EMAIL_CONFIRMATION", "FROM_EMAIL_CONFIRMATION_TO_VALIDATE_OTP", "FROM_LOGIN_TO_AUCTION_RULE", "FROM_LOGIN_TO_TERMS_AND_CONDITIONS", "LOGIN_CODE_PARTS_SECTION", "LOGIN_CODE_WATCH_SECTION", "LOGIN_CODE_PREBID_SECTION", "LOGIN_CODE_BUYNOW_SECTION", "LOGIN_CODE_JOINAUCTION_SECTION", "LOGIN_CODE_COST_CAL_SECTION", "LOGIN_CODE_WARNING", "LOGIN_CODE_LANDING_PAGE", "LOGIN_CODE_LANDING_PAGE_WATCHURL", "app_productionRelease"}, mo66934k = 1, mo66935mv = {1, 1, 13})
+/* compiled from: ActivityRequestCode.kt */
+public enum ActivityRequestCode {
+    FROM_LOGIN_TO_EMAIL_CONFIRMATION(100),
+    FROM_EMAIL_CONFIRMATION_TO_VALIDATE_OTP(101),
+    FROM_LOGIN_TO_AUCTION_RULE(120),
+    FROM_LOGIN_TO_TERMS_AND_CONDITIONS(111),
+    LOGIN_CODE_PARTS_SECTION(25),
+    LOGIN_CODE_WATCH_SECTION(26),
+    LOGIN_CODE_PREBID_SECTION(27),
+    LOGIN_CODE_BUYNOW_SECTION(28),
+    LOGIN_CODE_JOINAUCTION_SECTION(29),
+    LOGIN_CODE_COST_CAL_SECTION(30),
+    LOGIN_CODE_WARNING(20),
+    LOGIN_CODE_LANDING_PAGE(31),
+    LOGIN_CODE_LANDING_PAGE_WATCHURL(32);
+    
+    private final int value;
+
+    private ActivityRequestCode(int i) {
+        this.value = i;
+    }
+
+    public final int getValue() {
+        return this.value;
+    }
+}

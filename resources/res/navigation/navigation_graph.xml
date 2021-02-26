@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/navigation_graph" app:startDestination="@+id/AuctionSalesFragment">
+    <fragment android:label="navigation_AS_fragment" android:name="com.iaai.android.bdt.feature.auctionSalesList.AuctionSalesListFragment" android:id="@+id/AuctionSalesFragment">
+        <action android:id="@+id/action_ACFragment_to_View_Pager_PDFragment" app:destination="@+id/ViewPagerPDFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+    </fragment>
+    <fragment android:label="navigation_PD_fragment" android:name="com.iaai.android.bdt.feature.productDetail.ProductDetailFragment" android:id="@+id/PDFragment"/>
+    <fragment android:label="navigation_viewPager_PD_fragment" android:name="com.iaai.android.bdt.feature.productDetail.ViewPagerFragment" android:id="@+id/ViewPagerPDFragment">
+        <action android:id="@+id/action_view_pager_PDFragment_to_PreBIDFragment" app:destination="@+id/PreBIDFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+        <action android:id="@+id/action_view_pager_PDFragment_to_BuyNowFragment" app:destination="@+id/BuyNowFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+        <action android:id="@+id/action_view_pager_PDFragment_to_CostCalculatorFragment" app:destination="@+id/CostCalculatorFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+        <action android:id="@+id/action_view_pager_PDFragment_to_chrome_section_fragment" app:destination="@+id/ChromeSectionFragment" app:enterAnim="@anim/nav_default_enter_anim"/>
+    </fragment>
+    <fragment android:label="navigation_PreBid_fragment" android:name="com.iaai.android.bdt.feature.productDetail.prebid.PreBidFragment" android:id="@+id/PreBIDFragment"/>
+    <fragment android:label="navigation_buy_now_fragment" android:name="com.iaai.android.bdt.feature.productDetail.buyNow.BuyNowFragment" android:id="@+id/BuyNowFragment"/>
+    <fragment android:label="navigation_cost_calculator_fragment" android:name="com.iaai.android.bdt.feature.productDetail.costCalculator.CostCalculatorFragment" android:id="@+id/CostCalculatorFragment"/>
+    <fragment android:label="navigation_chrome_section_fragment" android:name="com.iaai.android.bdt.feature.productDetail.chromeSection.ChromeSectionFragment" android:id="@+id/ChromeSectionFragment"/>
+</navigation>

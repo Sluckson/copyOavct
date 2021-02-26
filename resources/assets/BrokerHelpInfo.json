@@ -1,0 +1,62 @@
+[
+  {
+    "country_code": "AZ",
+    "country_name": "Azerbaijan",
+    "native_content":"Bizim Azərbaycanda yerləşən rəsmi nümayəndə qeydiyyat, alış, çatdırılma, maliyyələşdirmə və sairə məsələlərnən köməklik göstərir. Bizim nümayəndə barədə ətraflı məlumat üçün linkə daxil olun:",
+    "english_content":"We have a representative in Azerbaijan who can help you with registration, purchasing, financing, shipping, and more. For more information about our Azerbaijani representative, click here:",
+    "help_url":"https://www.iaai.com/Broker/BrokerDetails?id=19",
+    "broker_id":"19",
+    "native_heading":"Azərbaycanda yerləşən IAA nümayəndəsi haqqında məlumatlara bax.",
+    "english_heading":"View information about the IAA representative located in Azerbaijan."
+  },
+  {
+    "country_code": "GE",
+    "country_name": "Georgia",
+    "native_content":"ენ გვყავს ოფიციალური წარმომადგენელი საქართველოში რომლის მეშვეობითაც შეგიძლიათ შეიძინოთ ავტომობილი ჩვენს აუქციონზე, მოახდინოთ მისი ტრანსპორტირება საქართველოში და მიიღოთ სხვა სერვისები, რაც ავტომობილის შეძენისთვის იქნება საჭირო.  თუ გსურთ მიიღოთ მეტი ინფორმაცია საქართველოში ჩვენი ოფიციალური წარმომადგენლის შესახებ დააჭირეთ აქ:",
+    "english_content":"We have a representative in Georgia who can help you with purchasing, financing, shipping, and more. For more information about our Georgia representative, click here:",
+    "help_url":"https://www.iaai.com/Broker/BrokerDetails?id=9",
+    "broker_id":"9",
+    "native_heading":"ნახეთ ინფორმაცია საქართველოში ჩვენი ოფიციალური წარმომადგენლის შესახებ",
+    "english_heading":"View information about the IAA representative located in Georgia"
+  },
+  {
+    "country_code": "LB",
+    "country_name": "Lebanon",
+    "native_content":"لدينا ممثل حصري في لبنان الذي يمكنه المساعدة في التسجيل والشراء والتمويل والشحن وغيره. للمزيد من المعلومات حول ممثلنا اللبناني, اضغط هنا: ",
+    "english_content":"We have a representative in Lebanon who can help you with registration, purchasing, financing, shipping, and more. For more information about our Lebanese representative, click here:",
+    "help_url":"https://www.iaai.com/Services/BrokerDetails.aspx?id=15",
+    "broker_id":"15",
+    "native_heading":"عرض معلومات حول وكيل IAA الحصري في لبنان.",
+    "english_heading":"View information about the IAA representative located in Lebanon."
+  },
+  {
+    "country_code": "AM",
+    "country_name": "Armenia",
+    "native_content":"Մենք ունենք ներկայացուցչություն Հայաստանում, որը կարող է օգնել Ձեզ մեքենաների ձեռքբերման, տեղափոխման, ֆինանսավորման և այլ հարցերում։ Հայաստանյան մեր ներկայացուցրության մասին հավելյալ տեղեկությունների համար խնդրում ենք սեղմել այստեղ։",
+    "english_content":"We have a representative in Armenia who can help you with registration, purchasing, financing, shipping, and more.  For more information about our Armenia representative, click here:",
+    "help_url":"https://www.iaai.com/Broker/BrokerDetails?id=16",
+    "broker_id":"16",
+    "native_heading":"Տեսնել ավելին IAA Հայաստանում գտնվող ներկայացուցչության մասին ",
+    "english_heading":"View information about the IAA representative located in Armenia."
+  },
+  {
+    "country_code": "UA",
+    "country_name": "Ukraine",
+    "native_content":"У нас є офіційний представник в Україні, за допомогою якого Ви можете безпечно придбати автомобіль на нашому аукціоні, здійснити його доставку в Україну, отримати всі додаткові послуги і персональний сервіс.  Для отримання додаткової інформації про нашого українського представника натисніть тут",
+    "english_content":"We have a representative in Ukraine who can help you with purchasing, financing, shipping and more. For more information about our Ukrainian representative, click here:",
+    "help_url":"http://www.lion-trans.com.ua/",
+    "broker_id":"26",
+    "native_heading":"Посмотрите информацию о представителе IAA в Украине Ознайомитись з інформацією про представництво IAA в Україні",
+    "english_heading":"View information about the IAA representative located in Ukraine."
+  },
+  {
+    "country_code": "PL",
+    "country_name": "Poland",
+    "native_content":"Posiadamy przedstawicielstwo w Polsce, które może pomóc z rejestracją dostępu do licytacji, zakupami , finansowaniem, wysyłką pojazdów i nie tylko. Aby uzyskać więcej informacji o naszym Polskim przedstawicielstwie, kliknij tutaj:",
+    "english_content":"We have a representative in Poland who can help you with registration, purchasing, financing, shipping, and more.  For more information about our Polish representative, click here:",
+    "help_url":"https://www.iaai.com/Broker/BrokerDetails?id=18",
+    "broker_id":"18",
+    "native_heading":"Zobacz informacje o naszym przedstawicielstwie IAA w Polsce.",
+    "english_heading":"View information about the IAA representative located in Poland."
+  }
+]

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/content_search_panel_find_vehicle_0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/shadow_margin">
+    <LinearLayout android:orientation="vertical" android:id="@+id/clSuggestions" android:background="@color/bdt_gray_lightest" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <View android:id="@+id/search_seprator" android:background="@color/bdt_gray_light" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvSuggestionLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="4dp" android:textAllCaps="true" android:fontFamily="sans-serif-condensed" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_searchSuggestion" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+    <include android:id="@+id/emptySuggestions" android:visibility="visible" layout="@layout/layout_empty_suggestions"/>
+</FrameLayout>

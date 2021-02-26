@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_chrome_section_0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/shadow_margin">
+    <androidx.core.widget.NestedScrollView android:id="@+id/svBuyNowContainer" android:background="@color/bdt_white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19dp" android:layout_marginStart="30dp" android:layout_marginEnd="30dp">
+                <TextView android:textSize="20sp" android:textStyle="normal" android:textColor="#000000" android:id="@+id/tvYearModel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif-medium"/>
+                <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/lbl_bdt_chrome_section_info" android:lineSpacingExtra="4sp" android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+            <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llFactOptionsData" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvFactSectionHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvFactEquipment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="30dp"/>
+                <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llGenEquipmentData" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvGenSectionHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvGenEquipment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="30dp"/>
+                <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llStanEquipmentData" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvStanSectionHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvStanEquipment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="30dp"/>
+                <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/llTechSpecsData" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvTechSectionHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvTechEquipment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="30dp"/>
+                <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pbChromeLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+</FrameLayout>

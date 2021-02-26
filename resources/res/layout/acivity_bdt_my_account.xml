@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/acivity_bdt_my_account_0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/shadow_margin">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/frameLayout" android:background="@color/md_presale_list_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <View android:id="@+id/layout_border_line_date" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp" android:layout_below="@+id/toolbar" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:background="@color/bdt_white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                    <ImageView android:id="@+id/user_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="32dp" android:src="@drawable/ic_user" android:layout_alignParentTop="true"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/relative_layout_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="32dp">
+                        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/bdt_gray_darkest" android:id="@+id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.03"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_buyer_id_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp">
+                                <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_dark" android:id="@+id/lbl_buyer_id" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bdt_buyer_id" android:fontFamily="sans-serif" android:letterSpacing="0.03"/>
+                                <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_dark" android:id="@+id/tv_buyer_id_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="sans-serif" android:letterSpacing="0.03"/>
+                            </LinearLayout>
+                            <TextView android:textSize="16sp" android:textStyle="normal" android:textColor="@color/bdt_gray_darkest" android:id="@+id/tv_logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bdt_log_out" android:fontFamily="sans-serif" android:letterSpacing="0.03" style="@style/Text.Bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.tabs.TabLayout android:id="@+id/tl_my_account" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_marginRight="15dp" app:tabGravity="0" app:tabIndicatorColor="@color/bdt_red" app:tabIndicatorHeight="2dp" app:tabMaxWidth="0dp" app:tabMode="1" app:tabSelectedTextColor="@color/bdt_red" app:tabTextAppearance="@style/BDT.Custom.TabLayout" app:tabTextColor="@color/bdt_gray_dark"/>
+                    <View android:background="@color/bdt_gray_light" android:layout_width="match_parent" android:layout_height="1dp"/>
+                    <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager2" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pb_my_account" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

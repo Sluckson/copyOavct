@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout" android:tag="layout/activity_premium_vehicle_report_layout_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/BDT.Base.MyTheme" android:id="@+id/pvrToolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            <RelativeLayout android:theme="@style/BDT.Base.MyTheme" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/imgPremiumReport" android:background="@null" android:padding="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cross_small" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/bdt_black" android:gravity="center" android:id="@+id/tvPRToolbarHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/premium_vehicle_report" android:layout_centerVertical="true" android:fontFamily="sans-serif-condensed"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <WebView android:id="@+id/wvPVR" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pvr_pbLoading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+</FrameLayout>

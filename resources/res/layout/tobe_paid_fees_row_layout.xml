@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/tobepaid_dialog_fees_label_color" android:id="@+id/label_fees" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buyer Fees :" android:layout_alignParentLeft="true"/>
+    <TextView android:textColor="@color/tobepaid_dialog_fees_label_color" android:id="@+id/value_fees" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$650" android:layout_alignParentRight="true"/>
+</RelativeLayout>

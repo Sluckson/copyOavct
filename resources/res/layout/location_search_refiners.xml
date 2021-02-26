@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout style="@style/ZipBackground">
+        <ImageView android:id="@+id/btnlocSearch" android:src="@drawable/ic_search_find" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CustomImageView"/>
+        <EditText android:id="@+id/lsearch" android:layout_toLeftOf="@+id/btnlocSearch" android:layout_centerVertical="true" android:imeOptions="actionGo" style="@style/EditText.ZipCode"/>
+    </RelativeLayout>
+    <include layout="@layout/tab_header_border"/>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

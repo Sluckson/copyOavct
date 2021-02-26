@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/bdt_white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout" android:padding="8dp" android:paddingTop="@dimen/hd_top_right_close_button_padding" android:paddingRight="@dimen/hd_top_right_close_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:gravity="center_vertical" android:id="@+id/hd_img_close" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_cancel_red" android:layout_alignParentRight="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/frameLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/hd_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageButton android:layout_gravity="left" android:id="@+id/hd_left_button" android:background="@android:color/transparent" android:padding="@dimen/hd_left_right_button_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_circle_arrow_left"/>
+        <ImageButton android:layout_gravity="right" android:id="@+id/hd_right_button" android:background="@android:color/transparent" android:padding="@dimen/hd_left_right_button_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_circle_arrow_right"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/row_item_auction_main_list_0" android:background="@color/bdt_white" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="24dp">
+    <TextView android:textSize="24sp" android:textColor="@color/bdt_gray_darkest" android:id="@+id/tvAuctionBranch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llStateInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:textSize="16sp" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvAuctionStateName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="16sp" android:textColor="@color/bdt_gray_darker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " android:fontFamily="sans-serif"/>
+            <TextView android:textSize="16sp" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvAuctionTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/bdt_gray" android:id="@+id/tvVehicleCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_below="@+id/llStateInfo" android:fontFamily="sans-serif"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="8dp">
+            <TextView android:textSize="14sp" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvPreBidCloseTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="14sp" android:textColor="@color/bdt_gray_darker" android:id="@+id/tvAuctionStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/bdt_gray_darkest" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tvPublicAuction" android:background="@drawable/rounded_public_auction" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_bdt_auction_list_public_auction" android:textAllCaps="false" android:fontFamily="sans-serif" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/llBidButtonAuction" android:background="@color/bdt_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <Button android:textColor="@color/bdt_white" android:layout_gravity="center" android:id="@+id/btnBidAuction" android:background="@color/bdt_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Join Auction" android:drawablePadding="6dp" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

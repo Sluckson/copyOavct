@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/header_layout">
+        <WebView android:id="@+id/terms_and_conditions" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+    <Button android:textColor="@color/iaa_report_txt_blue" android:id="@+id/btn_accept" android:background="@color/iaa_gray_bg_balance" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/terms_of_use_accept" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

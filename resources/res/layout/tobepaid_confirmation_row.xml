@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/space" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="12dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/parent" android:background="@drawable/confirmtable_bgshadow" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+        <TextView android:textSize="20sp" android:textColor="@color/iaa_red" android:id="@+id/txt_section_message" android:padding="0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="0dp"/>
+        <LinearLayout android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/iaa_txt_orange" android:id="@+id/error_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="16sp" android:id="@+id/txt_year_make_model_tbp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/lbl_for_stock_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_tobepaid_stk"/>
+                <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_stock_no" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="stock####" android:layout_toRightOf="@+id/lbl_for_stock_no" android:layout_alignBaseline="@+id/lbl_for_stock_no"/>
+                <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:ellipsize="marquee" android:id="@+id/txt_vin_tbp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vin ##########" android:layout_toRightOf="@+id/txt_stock_no" android:layout_alignBaseline="@+id/lbl_for_stock_no"/>
+                <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_branch_tbp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/lbl_for_stock_no"/>
+                <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/txt_branch_tbp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/darkgray_lightgray_selector" android:id="@+id/txt_ref_number" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/txt_amount" android:layout_alignBaseline="@+id/txt_amount"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:id="@+id/pick_up_date" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:id="@+id/txt_branch" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="16sp" android:id="@+id/txt_off_site" android:paddingLeft="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lbl_off_site_tobepaid" android:drawableLeft="@drawable/location" android:drawablePadding="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

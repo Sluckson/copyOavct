@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="@string/lbl_prebid" style="@style/TabHeader"/>
+    <include layout="@layout/tab_header_border"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/container_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+            <TextView android:id="@+id/txt_current_high_amount_label" android:text="@string/lbl_current_high" style="@style/Text.Normal"/>
+            <TextView android:id="@+id/txt_current_high" android:layout_marginLeft="8dp" style="@style/Text.Normal"/>
+            <TextView android:id="@+id/txt_current_high_bidder" android:layout_marginLeft="8dp" style="@style/Text.Normal"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/auction_countdown" android:layout_gravity="center_horizontal" android:id="@+id/txt_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" style="@style/DetailText"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/section_no_of_bid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp">
+            <TextView android:layout_marginRight="6dp" android:text="@string/lbl_bid_history" style="@style/Text.Normal"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/img_bid_history" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_info_new" android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <TextView android:layout_gravity="center_horizontal" android:text="@string/lbl_pre_bid_max" style="@style/Text.Normal"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/iaa_gray" android:layout_gravity="center" android:text="@string/dollar_sign" style="@style/Text.Normal"/>
+            <EditText android:layout_gravity="center_horizontal" android:id="@+id/txt_max_bid" android:layout_width="174dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:hint="@string/lbl_pre_bid_max" android:imeOptions="actionDone" style="@style/EditText.Bid"/>
+            <TextView android:textColor="@color/iaa_gray" android:layout_gravity="center" android:text="@string/usd_text" style="@style/Text.Normal"/>
+        </LinearLayout>
+        <Button android:id="@+id/btn_submit" android:layout_marginTop="12dp" android:text="@string/lbl_submit" style="@style/Button.Bid"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="@string/title_outbid" android:key="pref_cat_outbid">
+        <CheckBoxPreference android:title="@string/lbl_my_vehicles_alert" android:key="pref_key_outbid_alert" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/lbl_push_notification" android:key="pref_key_outbid_notification" android:dependency="pref_key_outbid_alert" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/lbl_won_today" android:key="pref_cat_won_today">
+        <CheckBoxPreference android:title="@string/lbl_my_vehicles_alert" android:key="pref_key_won_today_alert" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/lbl_push_notification" android:key="pref_key_won_today_notification" android:dependency="pref_key_won_today_alert" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_state_changes" android:key="pref_cat_award_pending_status_changes">
+        <CheckBoxPreference android:title="@string/lbl_my_vehicles_alert" android:key="pref_key_award_pending_status_changes_alert" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/lbl_push_notification" android:key="pref_key_award_pending_status_changes_notification" android:dependency="pref_key_award_pending_status_changes_alert" android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_payment_posted" android:key="pref_cat_payment_posted">
+        <CheckBoxPreference android:title="@string/lbl_my_vehicles_alert" android:key="pref_key_payment_posted_alert" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/lbl_push_notification" android:key="pref_key_payment_posted_notification" android:dependency="pref_key_payment_posted_alert" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_vehicle_pick_up" android:key="pref_cat_vehicle_picked_up">
+        <CheckBoxPreference android:title="@string/lbl_my_vehicles_alert" android:key="pref_key_vehicle_picked_up_alert" android:defaultValue="false"/>
+        <CheckBoxPreference android:title="@string/lbl_push_notification" android:key="pref_key_vehicle_picked_up_notification" android:dependency="pref_key_vehicle_picked_up_alert" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_sale_alert" android:key="pref_cat_watch_list_sale">
+        <CheckBoxPreference android:title="@string/lbl_my_vehicles_alert" android:key="pref_key_watch_list_sale_alert" android:defaultValue="true"/>
+        <CheckBoxPreference android:title="@string/lbl_push_notification" android:key="pref_key_watch_list_sale_notification" android:dependency="pref_key_watch_list_sale_alert" android:defaultValue="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

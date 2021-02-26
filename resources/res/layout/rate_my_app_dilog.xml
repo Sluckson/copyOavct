@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ratemyappdilog" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/dilogHeader" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:gravity="center_horizontal" android:id="@+id/btnRate" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:gravity="center_horizontal" android:id="@+id/btnRemindMeLater" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Remind me later"/>
+    <Button android:gravity="center_horizontal" android:id="@+id/btnNoThanks" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No, thanks"/>
+</LinearLayout>

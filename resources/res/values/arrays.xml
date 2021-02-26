@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="autosize_text_sizes">
+        <item>12sp</item>
+        <item>16sp</item>
+        <item>40sp</item>
+        <item>100sp</item>
+    </array>
+    <array name="branch_name_groups">
+        <item>A-F</item>
+        <item>G-M</item>
+        <item>N-S</item>
+        <item>T-Z</item>
+    </array>
+    <array name="buy_now_price_data">
+        <item>$0 - $499</item>
+        <item>$500 - $1,499</item>
+        <item>$1,500 - $2,999</item>
+        <item>$3,000 - $4,999</item>
+        <item>$5,000 and up</item>
+    </array>
+    <array name="default_array_refiner_airbag">
+        <item>No Restrictions</item>
+    </array>
+    <array name="default_array_refiner_anyday">
+        <item>Any Day</item>
+    </array>
+    <array name="default_array_refiner_buyertype">
+        <item>All Buyer Types</item>
+    </array>
+    <array name="default_automobile_types">
+        <item>Sedan</item>
+        <item>Hatchback</item>
+        <item>Coupe</item>
+        <item>Hybrid</item>
+        <item>Convertible</item>
+        <item>Highend</item>
+    </array>
+    <array name="default_spinner_data">
+        <item>Any</item>
+    </array>
+    <array name="default_vehicle_types">
+        <item>Automobiles</item>
+        <item>Suv</item>
+        <item>Pick-up Truck</item>
+        <item>Van</item>
+        <item>Motorcycles</item>
+        <item>Recreational/ Miscellaneous</item>
+        <item>Trailer</item>
+        <item>Equipment</item>
+        <item>Classic</item>
+        <item>Heavy Duty Trucks</item>
+    </array>
+    <array name="find_details_hint_message">
+        <item>Select as many models as you would like, up to a maximum of 10 makes</item>
+    </array>
+    <array name="find_details_hint_title">
+        <item>Select multiple makes/models</item>
+    </array>
+    <array name="fixed_quick_link_refiners_value">
+        <item>Buy Now</item>
+        <item>Run &amp; Drive</item>
+        <item>Clear Title</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>This Week</item>
+        <item>Next Week</item>
+        <item>Available to public</item>
+        <item>Flood/Water</item>
+        <item>Repossession</item>
+        <item>Recovered Theft</item>
+        <item>Remarketing</item>
+    </array>
+    <array name="initial_range_slider_values">
+        <item>@null</item>
+        <item>150000</item>
+    </array>
+    <array name="manage_offers_hint_message">
+        <item>Tap the Offers icon to manage negotiations with sellers on won vehicles.</item>
+    </array>
+    <array name="manage_offers_hint_title">
+        <item>Manage offers from sellers</item>
+    </array>
+    <array name="md_ambient_shadow_drawables_z18">
+        <item>@null</item>
+        <item>@drawable/md_ambient_shadow_z1_x2</item>
+        <item>@drawable/md_ambient_shadow_z2_x2</item>
+        <item>@drawable/md_ambient_shadow_z3_x2</item>
+        <item>@drawable/md_ambient_shadow_z4_x2</item>
+        <item>@drawable/md_ambient_shadow_z5_x2</item>
+        <item>@drawable/md_ambient_shadow_z6_x2</item>
+        <item>@drawable/md_ambient_shadow_z7_x2</item>
+        <item>@drawable/md_ambient_shadow_z8_x2</item>
+        <item>@drawable/md_ambient_shadow_z9_x2</item>
+        <item>@drawable/md_ambient_shadow_z10_x2</item>
+        <item>@drawable/md_ambient_shadow_z11_x2</item>
+        <item>@drawable/md_ambient_shadow_z12_x2</item>
+        <item>@drawable/md_ambient_shadow_z13_x2</item>
+        <item>@drawable/md_ambient_shadow_z14_x2</item>
+        <item>@drawable/md_ambient_shadow_z15_x2</item>
+        <item>@drawable/md_ambient_shadow_z16_x2</item>
+        <item>@drawable/md_ambient_shadow_z17_x2</item>
+        <item>@drawable/md_ambient_shadow_z18_x2</item>
+    </array>
+    <array name="md_spot_shadow_drawables_z18">
+        <item>@null</item>
+        <item>@drawable/md_spot_shadow_z1_x2</item>
+        <item>@drawable/md_spot_shadow_z2_x2</item>
+        <item>@drawable/md_spot_shadow_z3_x2</item>
+        <item>@drawable/md_spot_shadow_z4_x2</item>
+        <item>@drawable/md_spot_shadow_z5_x2</item>
+        <item>@drawable/md_spot_shadow_z6_x2</item>
+        <item>@drawable/md_spot_shadow_z7_x2</item>
+        <item>@drawable/md_spot_shadow_z8_x2</item>
+        <item>@drawable/md_spot_shadow_z9_x2</item>
+        <item>@drawable/md_spot_shadow_z10_x2</item>
+        <item>@drawable/md_spot_shadow_z11_x2</item>
+        <item>@drawable/md_spot_shadow_z12_x2</item>
+        <item>@drawable/md_spot_shadow_z13_x2</item>
+        <item>@drawable/md_spot_shadow_z14_x2</item>
+        <item>@drawable/md_spot_shadow_z15_x2</item>
+        <item>@drawable/md_spot_shadow_z16_x2</item>
+        <item>@drawable/md_spot_shadow_z17_x2</item>
+        <item>@drawable/md_spot_shadow_z18_x2</item>
+    </array>
+    <array name="new_inventory_refiner">
+        <item>All</item>
+        <item>Last 24 hrs</item>
+        <item>Last 48 hrs</item>
+        <item>Last 7 days</item>
+        <item>Last 14 days</item>
+    </array>
+    <array name="new_search_sort_item_list">
+        <item>Auction Date (Soonest First)</item>
+        <item>Auction Date (Farthest First)</item>
+        <item>Branch (A to Z)</item>
+        <item>Branch (Z to A)</item>
+        <item>Year (Oldest First)</item>
+        <item>Year (Newest First)</item>
+        <item>Make (A to Z)</item>
+        <item>Make (Z to A)</item>
+        <item>Model (A to Z)</item>
+        <item>Model (Z to A)</item>
+        <item>Series (A to Z)</item>
+        <item>Series (Z to A)</item>
+        <item>Stock # (Lowest First)</item>
+        <item>Stock # (Highest First)</item>
+        <item>VIN (Lowest First)</item>
+        <item>VIN (Highest First)</item>
+        <item>Odometer (Lowest First)</item>
+        <item>Odometer (Highest First)</item>
+        <item>Lane (A to Z)</item>
+        <item>Lane (Z to A)</item>
+        <item>Run # (Lowest First)</item>
+        <item>Run # (Highest First)</item>
+        <item>Sale Document (A to Z)</item>
+        <item>Sale Document (Z to A)</item>
+        <item>Loss Type (A to Z)</item>
+        <item>Loss Type (Z to A)</item>
+        <item>Primary Damage (A to Z)</item>
+        <item>Primary Damage (Z to A)</item>
+        <item>Market (A to Z)</item>
+        <item>Market (Z to A)</item>
+    </array>
+    <array name="payment_method_payPal_hint_message">
+        <item>You can now pay for your items with PayPal. Just link your account and you&apos;re ready to go!</item>
+    </array>
+    <array name="payment_method_payPal_hint_title">
+        <item>Pay with PayPal</item>
+    </array>
+    <array name="product_detail_engine_video_hint_message">
+        <item>You can see a picture of the vehicle’s key by tapping the key icon.</item>
+        <item>You can now share a stock with other users by tapping the share icon.</item>
+        <item>View a video of the engine running with sound by tapping the play video icon.</item>
+    </array>
+    <array name="product_detail_engine_video_hint_title">
+        <item>See a vehicle’s key</item>
+        <item>Share a stock with other users</item>
+        <item>Running engine video</item>
+    </array>
+    <array name="product_detail_engine_video_only_hint_message">
+        <item>View a video of the engine running with sound by tapping the play video icon.</item>
+    </array>
+    <array name="product_detail_engine_video_only_hint_title">
+        <item>Running engine video</item>
+    </array>
+    <array name="product_detail_hint_message">
+        <item>You can see a picture of the vehicle’s key by tapping the key icon.</item>
+        <item>You can now share a stock with other users by tapping the share icon.</item>
+    </array>
+    <array name="product_detail_hint_title">
+        <item>See a vehicle’s key</item>
+        <item>Share a stock with other users</item>
+    </array>
+    <array name="search_sort_item_list">
+        <item>Auction Date (Soonest to Latest)</item>
+        <item>Auction Date (Latest to Soonest)</item>
+        <item>Branch (A to Z)</item>
+        <item>Branch (Z to A)</item>
+        <item>Year (Newest to Oldest)</item>
+        <item>Year (Oldest to Newest)</item>
+        <item>Make (A to Z)</item>
+        <item>Make (Z to A)</item>
+        <item>Model (A to Z)</item>
+        <item>Model (Z to A)</item>
+        <item>Series (A to Z)</item>
+        <item>Series (Z to A)</item>
+        <item>Stock # (Lowest to Highest)</item>
+        <item>Stock # (Highest to Lowest)</item>
+        <item>VIN (Lowest to Highest)</item>
+        <item>VIN (Highest to Lowest)</item>
+        <item>Odometer (Lowest to Highest)</item>
+        <item>Odometer (Highest to Lowest)</item>
+        <item>Lane (A to Z)</item>
+        <item>Lane (Z to A)</item>
+        <item>Run # (Lowest to Highest)</item>
+        <item>Run # (Highest to Lowest)</item>
+        <item>Sale Document (A to Z)</item>
+        <item>Sale Document (Z to A)</item>
+        <item>Loss Type (A to Z)</item>
+        <item>Loss Type (Z to A)</item>
+        <item>Primary Damage (A to Z)</item>
+        <item>Primary Damage (Z to A)</item>
+    </array>
+    <array name="service_category_array">
+        <item>Select a Service Category*</item>
+        <item>General Question</item>
+        <item>Suggestion for Improvement</item>
+        <item>Online Bidding Information</item>
+        <item>App Comment or Problem</item>
+        <item>IAA Registration/User login</item>
+        <item>Specific Vehicle</item>
+    </array>
+    <array name="shortcut_refiners">
+        <item>Buy Now</item>
+        <item>Run &amp; Drive</item>
+        <item>Clear Title</item>
+    </array>
+    <array name="shortcut_refiners_auctions">
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>This Week</item>
+        <item>Next Week</item>
+    </array>
+    <array name="sort_item_Award_list">
+        <item>Bid Amount (Lowest to highest)</item>
+        <item>Bid Amount (Highest to lowest)</item>
+        <item>Bidder (A to Z)</item>
+        <item>Bidder (Z to A)</item>
+        <item>Branch (A to Z)</item>
+        <item>Branch (Z to A)</item>
+        <item>Item # (Lowest to highest)</item>
+        <item>Item # (Highest to lowest)</item>
+        <item>Year/Make/Model (A to Z)</item>
+        <item>Year/Make/Model (Z to A)</item>
+    </array>
+    <array name="sort_item_list">
+        <item>Run # (Lowest to highest)</item>
+        <item>Run # (Highest to lowest)</item>
+        <item>Lane (A to Z)</item>
+        <item>Lane (Z to A)</item>
+        <item>Make (A to Z)</item>
+        <item>Make (Z to A)</item>
+        <item>Odometer (Lowest to highest)</item>
+        <item>Odometer (Highest to lowest)</item>
+        <item>Year (Newest to oldest)</item>
+        <item>Year (Oldest to newest)</item>
+    </array>
+    <array name="sort_item_lost_pre_bid_list">
+        <item>Bid Amount (Lowest to highest)</item>
+        <item>Bid Amount (Highest to lowest)</item>
+        <item>Bidder (A to Z)</item>
+        <item>Bidder (Z to A)</item>
+        <item>Branch (A to Z)</item>
+        <item>Branch (Z to A)</item>
+        <item>Make (A to Z)</item>
+        <item>Make (Z to A)</item>
+        <item>Year (Oldest to newest)</item>
+        <item>Year (Newest to oldest)</item>
+    </array>
+    <array name="sort_item_purchase_history_list">
+        <item>Branch (A to Z)</item>
+        <item>Branch (Z to A)</item>
+        <item>Date Paid (Oldest to newest)</item>
+        <item>Date Paid (Newest to oldest)</item>
+        <item>Make (A to Z)</item>
+        <item>Make (Z to A)</item>
+        <item>Year (Oldest to newest)</item>
+        <item>Year (Newest to oldest)</item>
+    </array>
+    <array name="sort_item_sale_document_list">
+        <item>Vehicle (A to Z)</item>
+        <item>Vehicle (Z to A)</item>
+        <item>Branch (A to Z)</item>
+        <item>Branch (Z to A)</item>
+        <item>Sale Document Instructions (A to Z)</item>
+        <item>Sale Document Instructions (Z to A)</item>
+    </array>
+    <array name="sort_item_tobe_pickedup_list">
+        <item>Branch (A to Z)</item>
+        <item>Branch (Z to A)</item>
+        <item>Due Date (Soonest to Latest)</item>
+        <item>Due Date (Latest to Soonest)</item>
+    </array>
+    <array name="sort_item_watch_list">
+        <item>Auction Date (Lowest to highest)</item>
+        <item>Auction Date (Highest to lowest)</item>
+        <item>Make (A to Z)</item>
+        <item>Make (Z to A)</item>
+        <item>Odometer (Lowest to highest)</item>
+        <item>Odometer (Highest to lowest)</item>
+        <item>Year (Newest to oldest)</item>
+        <item>Year (Oldest to newest)</item>
+    </array>
+    <array name="to_paid_sort_item_list">
+        <item>Due Date (Soonest)</item>
+        <item>Due Date (Latest)</item>
+        <item>Branch (A to Z)</item>
+        <item>Branch (Z to A)</item>
+        <item>Bid Amount (Lowest)</item>
+        <item>Bid Amount (Highest)</item>
+        <item>Date Won (Soonest)</item>
+        <item>Date Won (Latest)</item>
+    </array>
+    <array name="vehicle_sale_filter_hint_message">
+        <item>Tap “Next” to breeze through what’s new.</item>
+        <item>Filters are now grouped into Vehicle and Sale filters for control and convenience.</item>
+        <item>Most filters are upgraded with the ability to check multiple boxes, so don’t hold back.</item>
+        <item>The New Inventory filter helps you target our latest additions.</item>
+        <item>The new Series filter is available after selecting a Make and Model.</item>
+        <item>Now you can filter to view stocks located in our international markets.</item>
+        <item>Save your favorite searches and sync across your Mobile App and IAAI.com!</item>
+        <item>Easily access your Saved Searches right from the app landing page.</item>
+        <item>Tap the “Tell Us” button in the My Account section.</item>
+    </array>
+    <array name="vehicle_sale_filter_hint_title">
+        <item>Tour the new Search features</item>
+        <item>Be sure to see all filters!</item>
+        <item>Select Multiple Filters</item>
+        <item>Filter by New Inventory</item>
+        <item>Filtering by Series/Trim</item>
+        <item>International market filters</item>
+        <item>Save a search</item>
+        <item>Accessing Saved Searches</item>
+        <item>Please share your feedback</item>
+    </array>
+    <array name="zip_miles_refiner">
+        <item>Nationwide</item>
+        <item>50 miles</item>
+        <item>100 miles</item>
+        <item>200 miles</item>
+        <item>300 miles</item>
+        <item>500 miles</item>
+        <item>800 miles</item>
+    </array>
+</resources>

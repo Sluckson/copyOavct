@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/iaa_bg_gray" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/search_view_background" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/search_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_magnify"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3">
+            <EditText android:textColor="#222222" android:ellipsize="end" android:id="@+id/new_keyword_search" android:background="@android:color/transparent" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:hint="@string/search_view_hint" android:singleLine="true" android:imeOptions="actionDone"/>
+            <ImageButton android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/clear_text" android:background="@drawable/ic_login_clear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/btn_voice_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/ic_microphone"/>
+    </LinearLayout>
+</RelativeLayout>

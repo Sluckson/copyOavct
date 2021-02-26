@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="@string/title_alert_notif" android:key="pref_cat_key_notifications">
+        <Preference android:title="@string/lbl_config_alerts" android:key="@string/pref_key_change_notification"/>
+        <RingtonePreference android:title="@string/lbl_alert_sound" android:key="@string/pref_key_notification_ring_tone" android:summary="@string/lbl_currently" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true"/>
+        <CheckBoxPreference android:title="@string/lbl_vibrate" android:key="@string/pref_key_notification_vibrate" android:summary="@string/lbl_vibrate_new" android:defaultValue="true"/>
+    </PreferenceCategory>
+    <Preference android:title="@string/lbl_logout" android:key="@string/pref_key_logout"/>
+    <PreferenceCategory android:title="@string/title_about_iaa" android:key="pref_cat_key_terms_of_use" android:summary="@string/title_terms_of_use">
+        <Preference android:title="@string/terms_of_use" android:key="@string/pref_key_terms_of_use"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_General" android:key="pref_cat_key_general">
+        <Preference android:title="@string/lbl_version" android:key="@string/pref_key_txt_version"/>
+    </PreferenceCategory>
+</PreferenceScreen>

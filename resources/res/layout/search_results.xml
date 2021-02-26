@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:droidfu="http://github.com/droidfu/schema" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/search_results_header" style="@style/TabHeader"/>
+    <FrameLayout android:id="@+id/search_results_header_Auction" android:visibility="gone" style="@style/TabHeader"/>
+    <include layout="@layout/tab_header_border"/>
+    <FrameLayout android:id="@+id/search_results_subheader" android:visibility="gone" style="@style/SectionHeader"/>
+    <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:gravity="center" android:id="@android:id/empty" android:visibility="gone" style="@style/DetailText"/>
+</LinearLayout>

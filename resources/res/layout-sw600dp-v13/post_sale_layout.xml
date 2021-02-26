@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/post_sale_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+        <TextView android:textSize="16sp" android:textColor="#990703" android:id="@+id/lbl_postsale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_POST_SALE"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <RelativeLayout android:paddingRight="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/productdtl_card_view_corner_radius" app:cardElevation="@dimen/productdtl_cardview_elevation" app:cardUseCompatPadding="true">
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/award_pending_layout" android:padding="27dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/icon_awardpending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dashboard_award_pending"/>
+                    <TextView android:textSize="16sp" android:textColor="#de000000" android:id="@+id/lbl_awardpending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/lbl_award_pending" android:layout_toRightOf="@+id/icon_awardpending"/>
+                    <TextView android:textSize="16sp" android:textColor="#de000000" android:id="@+id/award_pending_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="12dp" android:text="33" android:layout_toRightOf="@+id/icon_awardpending" android:layout_below="@+id/lbl_awardpending" android:layout_marginStart="@+id/lbl_awardpending"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_view2" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/productdtl_card_view_corner_radius" app:cardElevation="@dimen/productdtl_cardview_elevation" app:cardUseCompatPadding="true">
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/tobepaid_layout" android:padding="27dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/icon_tobepaid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dashboard_payment"/>
+                    <TextView android:textSize="16sp" android:textColor="#de000000" android:id="@+id/lbl_tobepaid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/lbl_tobe_paid" android:layout_toRightOf="@+id/icon_tobepaid"/>
+                    <TextView android:textSize="16sp" android:textColor="#de000000" android:id="@+id/tobepaid_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="12dp" android:text="23" android:layout_toRightOf="@+id/icon_tobepaid" android:layout_below="@+id/lbl_tobepaid" android:layout_marginStart="@+id/lbl_tobepaid"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:weightSum="2">
+        <RelativeLayout android:paddingRight="2dp" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_view3" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/productdtl_card_view_corner_radius" app:cardElevation="@dimen/productdtl_cardview_elevation" app:cardUseCompatPadding="true">
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/tobepickedup_layout" android:padding="27dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/icon_tobepickedup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dashboard_pick_up"/>
+                    <TextView android:textSize="16sp" android:textColor="#de000000" android:id="@+id/lbl_tobepickedup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/lbl_pick_up" android:layout_toRightOf="@+id/icon_tobepickedup"/>
+                    <TextView android:textSize="16sp" android:textColor="#de000000" android:id="@+id/tobe_pickedup_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="12dp" android:text="23" android:layout_toRightOf="@+id/icon_tobepickedup" android:layout_below="@+id/lbl_tobepickedup" android:layout_marginStart="@+id/lbl_tobepickedup"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <include layout="@layout/my_account_box_layout"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
